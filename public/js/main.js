@@ -122,6 +122,11 @@ function filterBooks() {
         bookCard.appendChild(bookImage);
         bookCard.appendChild(bookTitle);
 
+        const id = book.getAttribute('id');
+        bookCard.addEventListener("click", () => {
+            window.location.href = `book-detail.html?id=${id}`;
+        });
+
         booksContainer.appendChild(bookCard);
         book = filteredBooks.iterateNext();
     }

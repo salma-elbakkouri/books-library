@@ -1,182 +1,160 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
-  <root>
-    <library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
-      <book id="1">
-        <title>Harry Potter and the Half-Blood Prince</title>
-        <year>2005</year>
-        <genre>Fantasy</genre>
-        <cover>images/harry.jpg</cover>
-        <summary>In the sixth installment of the Harry Potter series, the wizarding world trembles as dark forces tighten their grip and shadows lengthen over Hogwarts School of Witchcraft and Wizardry. Harry Potter returns for another tumultuous year where, amid growing fear and uncertainty, he is thrust into an intricate mystery surrounding the past of Lord Voldemort. Under the careful tutelage of Albus Dumbledore, Harry embarks on a perilous journey to uncover the secrets behind the Dark Lord’s immortality—learning about Horcruxes, the cursed objects that hold fragments of Voldemort's soul, and which must be destroyed if there is any hope of defeating him once and for all. Alongside his loyal friends Ron and Hermione, Harry navigates complex relationships, the resurgence of dangerous enemies, and the mysterious clues hidden within a long-forgotten potions textbook credited to the enigmatic “Half-Blood Prince.” As subtle betrayals and unexpected alliances surface within the castle walls, Harry finds himself not only deep in the study of magic but also in a battle of wits and will that challenges his understanding of loyalty, sacrifice, and the true cost of power. With each revelation, the stakes rise ever higher, setting the stage for the ultimate confrontation between the forces of good and the encroaching darkness.</summary>
-        <price>15.99</price>
-        <author>
-          <name>J.K. Rowling</name>
-          <nationality>British</nationality>
-          <bio> Joanne Rowling, better known as J.K. Rowling, is a British author celebrated for creating the Harry Potter series. Her imaginative storytelling and richly detailed magical world have captivated readers of all ages, inspiring a generation and leaving an indelible mark on modern literature.</bio>
-          <photo>images/rowling.jpg</photo>
-        </author>
-      </book>
-      <book id="2">
-        <title>1984</title>
-        <year>1949</year>
-        <genre>Dystopian</genre>
-        <cover>images/1984.jpg</cover>
-        <summary>1984 by George Orwell is a dystopian novel that explores themes of totalitarianism, surveillance, and individual freedom. Set in a bleak future where the world is divided into three superstates, the story takes place in Oceania, a society ruled by the Party and its leader, Big Brother. The Party exercises absolute control over its citizens through propaganda, constant surveillance, and strict laws that suppress independent thought. The Thought Police monitor people’s actions and even their thoughts, punishing any hint of rebellion.&#xD;&#xD;
-        The protagonist, Winston Smith, works at the Ministry of Truth, where he alters historical records to fit the Party’s ever-changing narrative. Disillusioned with the oppressive system, he secretly begins to question its authority. He starts a forbidden love affair with Julia, a fellow Party member who also despises the regime. Together, they seek freedom and join what they believe to be a rebel group, the Brotherhood, led by the mysterious Emmanuel Goldstein.&#xD;&#xD;
-        However, their rebellion is short-lived. They are betrayed by O'Brien, a high-ranking Party official who tricks them into believing he is part of the resistance. Winston and Julia are arrested and subjected to brutal torture. In Room 101, Winston faces his worst fear and ultimately breaks, betraying Julia and surrendering to the Party’s will. By the end, he is completely brainwashed, accepting Big Brother’s rule and losing his ability to think freely.&#xD;&#xD;
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+  <book id="1">
+    <title>Harry Potter and the Half-Blood Prince</title>
+    <year>2005</year>
+    <genre>Fantasy</genre>
+    <cover>images/harry.jpg</cover>
+    <summary>In the sixth installment of the Harry Potter series, the wizarding world trembles as dark forces tighten their grip and shadows lengthen over Hogwarts School of Witchcraft and Wizardry. Harry Potter returns for another tumultuous year where, amid growing fear and uncertainty, he is thrust into an intricate mystery surrounding the past of Lord Voldemort. Under the careful tutelage of Albus Dumbledore, Harry embarks on a perilous journey to uncover the secrets behind the Dark Lord’s immortality—learning about Horcruxes, the cursed objects that hold fragments of Voldemort's soul, and which must be destroyed if there is any hope of defeating him once and for all. Alongside his loyal friends Ron and Hermione, Harry navigates complex relationships, the resurgence of dangerous enemies, and the mysterious clues hidden within a long-forgotten potions textbook credited to the enigmatic “Half-Blood Prince.” As subtle betrayals and unexpected alliances surface within the castle walls, Harry finds himself not only deep in the study of magic but also in a battle of wits and will that challenges his understanding of loyalty, sacrifice, and the true cost of power. With each revelation, the stakes rise ever higher, setting the stage for the ultimate confrontation between the forces of good and the encroaching darkness.</summary>
+    <price>15.99</price>
+    <author>
+      <name>J.K. Rowling</name>
+      <nationality>British</nationality>
+      <bio> Joanne Rowling, better known as J.K. Rowling, is a British author celebrated for creating the Harry Potter series. Her imaginative storytelling and richly detailed magical world have captivated readers of all ages, inspiring a generation and leaving an indelible mark on modern literature.</bio>
+      <photo>images/rowling.jpg</photo>
+    </author>
+  </book>
+  <book id="2">
+    <title>1984</title>
+    <year>1949</year>
+    <genre>Dystopian</genre>
+    <cover>images/1984.jpg</cover>
+    <summary>1984 by George Orwell is a dystopian novel that explores themes of totalitarianism, surveillance, and individual freedom. Set in a bleak future where the world is divided into three superstates, the story takes place in Oceania, a society ruled by the Party and its leader, Big Brother. The Party exercises absolute control over its citizens through propaganda, constant surveillance, and strict laws that suppress independent thought. The Thought Police monitor people’s actions and even their thoughts, punishing any hint of rebellion.&#xD;&#xD;&#xD;
+        The protagonist, Winston Smith, works at the Ministry of Truth, where he alters historical records to fit the Party’s ever-changing narrative. Disillusioned with the oppressive system, he secretly begins to question its authority. He starts a forbidden love affair with Julia, a fellow Party member who also despises the regime. Together, they seek freedom and join what they believe to be a rebel group, the Brotherhood, led by the mysterious Emmanuel Goldstein.&#xD;&#xD;&#xD;
+        However, their rebellion is short-lived. They are betrayed by O'Brien, a high-ranking Party official who tricks them into believing he is part of the resistance. Winston and Julia are arrested and subjected to brutal torture. In Room 101, Winston faces his worst fear and ultimately breaks, betraying Julia and surrendering to the Party’s will. By the end, he is completely brainwashed, accepting Big Brother’s rule and losing his ability to think freely.&#xD;&#xD;&#xD;
         The novel serves as a chilling warning about government overreach, the manipulation of truth, and the dangers of unchecked power. Its themes of surveillance and control remain relevant today, making 1984 one of the most influential works of political fiction.</summary>
-        <price>12.99</price>
-        <author>
-          <name>George Orwell</name>
-          <nationality>British</nationality>
-          <bio>Eric Arthur Blair, plus connu sous son nom de plume George Orwell ([dʒɔː(ɹ)dʒ ˈɔːwel])a, né le 25 juin 1903 à Motihari (Inde) pendant la période du Raj britannique et mort le 21 janvier 1950 à Londres, est un écrivain, essayiste et journaliste britannique.</bio>
-          <photo>images/orwell.jpg</photo>
-        </author>
-      </book>
-      <book id="3">
-        <title>To Kill a Mockingbird</title>
-        <year>1960</year>
-        <genre>Classic</genre>
-        <cover>images/mockingbird.jpg</cover>
-        <summary>To Kill a Mockingbird by Harper Lee is a classic novel set in the racially segregated American South during the 1930s. The story is told through the eyes of Scout Finch, a young girl growing up in the town of Maycomb, Alabama, with her older brother, Jem, and their widowed father, Atticus, a principled lawyer. As Scout and Jem navigate childhood, they become fascinated by their mysterious neighbor, Boo Radley, a reclusive man rumored to be dangerous.&#xD;&#xD;
-        The central plot follows Atticus as he defends Tom Robinson, a Black man falsely accused of raping a white woman, Mayella Ewell. Despite clear evidence of Tom’s innocence, racial prejudice dominates the trial, and he is unjustly convicted. Later, Tom is shot and killed while trying to escape prison, highlighting the deep injustice in their society.&#xD;&#xD;
-        As the children witness their father’s moral courage, they also experience the town’s cruelty and hypocrisy. However, they also see acts of kindness, particularly when Boo Radley ultimately saves them from an attack by Bob Ewell, Mayella’s vengeful father. Through this experience, Scout learns an important lesson about empathy and human nature, understanding that Boo is not a monster but a deeply misunderstood person.&#xD;&#xD;
+    <price>12.99</price>
+    <author>
+      <name>George Orwell</name>
+      <nationality>British</nationality>
+      <bio>Eric Arthur Blair, plus connu sous son nom de plume George Orwell ([dʒɔː(ɹ)dʒ ˈɔːwel])a, né le 25 juin 1903 à Motihari (Inde) pendant la période du Raj britannique et mort le 21 janvier 1950 à Londres, est un écrivain, essayiste et journaliste britannique.</bio>
+      <photo>images/orwell.jpg</photo>
+    </author>
+  </book>
+  <book id="3">
+    <title>To Kill a Mockingbird</title>
+    <year>1960</year>
+    <genre>Classic</genre>
+    <cover>images/mockingbird.jpg</cover>
+    <summary>To Kill a Mockingbird by Harper Lee is a classic novel set in the racially segregated American South during the 1930s. The story is told through the eyes of Scout Finch, a young girl growing up in the town of Maycomb, Alabama, with her older brother, Jem, and their widowed father, Atticus, a principled lawyer. As Scout and Jem navigate childhood, they become fascinated by their mysterious neighbor, Boo Radley, a reclusive man rumored to be dangerous.&#xD;&#xD;&#xD;
+        The central plot follows Atticus as he defends Tom Robinson, a Black man falsely accused of raping a white woman, Mayella Ewell. Despite clear evidence of Tom’s innocence, racial prejudice dominates the trial, and he is unjustly convicted. Later, Tom is shot and killed while trying to escape prison, highlighting the deep injustice in their society.&#xD;&#xD;&#xD;
+        As the children witness their father’s moral courage, they also experience the town’s cruelty and hypocrisy. However, they also see acts of kindness, particularly when Boo Radley ultimately saves them from an attack by Bob Ewell, Mayella’s vengeful father. Through this experience, Scout learns an important lesson about empathy and human nature, understanding that Boo is not a monster but a deeply misunderstood person.&#xD;&#xD;&#xD;
         The novel explores themes of racism, justice, morality, and the loss of innocence, making it a powerful critique of social inequality and a timeless story about compassion and standing up for what is right.</summary>
-        <price>10.99</price>
-        <author>
-          <name>Harper Lee</name>
-          <nationality>American</nationality>
-          <bio>Nelle Harper Lee (April 28, 1926 – February 19, 2016) was an American novelist whose 1960 novel To Kill a Mockingbird won the 1961 Pulitzer Prize and became a classic of modern American literature.</bio>
-          <photo>images/harper.jpg</photo>
-        </author>
-      </book>
-      <book id="4">
-        <title>A Game of Thrones</title>
-        <year>1996</year>
-        <genre>Political novel, epic fantasy</genre>
-        <cover>images\game-of-thrones.jpg</cover>
-        <summary>A Clash of Kings, the second book in A Song of Ice and Fire by George R.R. Martin, follows the chaos that erupts after King Robert Baratheon's death as multiple claimants vie for the Iron Throne. In King’s Landing, young King Joffrey Baratheon rules cruelly, while Tyrion Lannister acts as Hand of the King, using his wit and political maneuvering to maintain Lannister control. Meanwhile, Stannis Baratheon, Robert’s eldest brother, declares himself the rightful king, aligning with the mysterious priestess Melisandre, who wields dark magic to assassinate his enemies. His brother, Renly Baratheon, also claims the throne but is mysteriously killed, likely by Melisandre’s magic.&#xD;&#xD;
-        Robb Stark continues his campaign in the North, winning battles but facing the challenge of securing alliances. In the Iron Islands, Balon Greyjoy declares himself King and sends his son, Theon Greyjoy, to take Winterfell, betraying the Starks. Theon’s rule is short-lived, as Winterfell falls into chaos when Ramsay Bolton's forces attack. Meanwhile, beyond the Wall, Jon Snow embarks on a dangerous mission with the Night’s Watch, encountering the growing threat of the Wildlings and their leader, Mance Rayder.&#xD;&#xD;
+    <price>10.99</price>
+    <author>
+      <name>Harper Lee</name>
+      <nationality>American</nationality>
+      <bio>Nelle Harper Lee (April 28, 1926 – February 19, 2016) was an American novelist whose 1960 novel To Kill a Mockingbird won the 1961 Pulitzer Prize and became a classic of modern American literature.</bio>
+      <photo>images/harper.jpg</photo>
+    </author>
+  </book>
+  <book id="4">
+    <title>A Game of Thrones</title>
+    <year>1996</year>
+    <genre>Political novel, epic fantasy</genre>
+    <cover>images\game-of-thrones.jpg</cover>
+    <summary>A Clash of Kings, the second book in A Song of Ice and Fire by George R.R. Martin, follows the chaos that erupts after King Robert Baratheon's death as multiple claimants vie for the Iron Throne. In King’s Landing, young King Joffrey Baratheon rules cruelly, while Tyrion Lannister acts as Hand of the King, using his wit and political maneuvering to maintain Lannister control. Meanwhile, Stannis Baratheon, Robert’s eldest brother, declares himself the rightful king, aligning with the mysterious priestess Melisandre, who wields dark magic to assassinate his enemies. His brother, Renly Baratheon, also claims the throne but is mysteriously killed, likely by Melisandre’s magic.&#xD;&#xD;&#xD;
+        Robb Stark continues his campaign in the North, winning battles but facing the challenge of securing alliances. In the Iron Islands, Balon Greyjoy declares himself King and sends his son, Theon Greyjoy, to take Winterfell, betraying the Starks. Theon’s rule is short-lived, as Winterfell falls into chaos when Ramsay Bolton's forces attack. Meanwhile, beyond the Wall, Jon Snow embarks on a dangerous mission with the Night’s Watch, encountering the growing threat of the Wildlings and their leader, Mance Rayder.&#xD;&#xD;&#xD;
         Across the sea, Daenerys Targaryen and her small band of followers travel through the harsh Red Waste, eventually reaching Qarth, where she struggles to gain allies for her quest to reclaim the throne. The book culminates in the dramatic Battle of the Blackwater, where Stannis's forces attack King’s Landing but are ultimately defeated due to Tyrion’s strategic use of wildfire. As the war for the throne continues, alliances shift, betrayals unfold, and the realm descends further into conflict.</summary>
-        <price>25.9</price>
-        <author>
-          <name>George R. R. Martin</name>
-          <nationality>American</nationality>
-          <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
-          <photo>images/george.jpg</photo>
-        </author>
-      </book>
-      <book id="5">
-        <title>A Feast for Crows</title>
-        <year>2005</year>
-        <genre>Fantasy</genre>
-        <cover>images/Feast-for-Crows.jpg</cover>
-        <summary>A Feast for Crows, the fourth book in A Song of Ice and Fire by George R.R. Martin, shifts focus to the political intrigue and power struggles in Westeros following the bloody events of A Storm of Swords. With many key figures dead, new players rise to claim power. In King’s Landing, Cersei Lannister rules as Queen Regent, but her paranoia and ambition lead to disastrous decisions, including empowering the Faith Militant, a religious order that turns against her. Meanwhile, Jaime Lannister seeks to restore order in the Riverlands, growing disillusioned with his sister.&#xD;&#xD;
-        In the Vale, Sansa Stark, disguised as Alayne Stone, navigates the manipulations of Petyr Baelish, who seeks to cement his influence over the region. Her sister Arya continues her journey in Braavos, training with the Faceless Men while struggling to let go of her past. In the Iron Islands, a brutal kingsmoot results in Euron Greyjoy seizing power, planning to conquer Westeros with dragonhorns and dark magic. In Dorne, the Sand Snakes conspire to avenge Oberyn Martell’s death, but their schemes are countered by Prince Doran’s patient, hidden plans. Meanwhile, Brienne of Tarth searches for Sansa, encountering outlaws and facing the terrifying Lady Stoneheart, the resurrected Catelyn Stark.&#xD;&#xD;
+    <price>25.9</price>
+    <author>
+      <name>George R. R. Martin</name>
+      <nationality>American</nationality>
+      <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
+      <photo>images/george.jpg</photo>
+    </author>
+  </book>
+  <book id="5">
+    <title>A Feast for Crows</title>
+    <year>2005</year>
+    <genre>Fantasy</genre>
+    <cover>images/Feast-for-Crows.jpg</cover>
+    <summary>A Feast for Crows, the fourth book in A Song of Ice and Fire by George R.R. Martin, shifts focus to the political intrigue and power struggles in Westeros following the bloody events of A Storm of Swords. With many key figures dead, new players rise to claim power. In King’s Landing, Cersei Lannister rules as Queen Regent, but her paranoia and ambition lead to disastrous decisions, including empowering the Faith Militant, a religious order that turns against her. Meanwhile, Jaime Lannister seeks to restore order in the Riverlands, growing disillusioned with his sister.&#xD;&#xD;&#xD;
+        In the Vale, Sansa Stark, disguised as Alayne Stone, navigates the manipulations of Petyr Baelish, who seeks to cement his influence over the region. Her sister Arya continues her journey in Braavos, training with the Faceless Men while struggling to let go of her past. In the Iron Islands, a brutal kingsmoot results in Euron Greyjoy seizing power, planning to conquer Westeros with dragonhorns and dark magic. In Dorne, the Sand Snakes conspire to avenge Oberyn Martell’s death, but their schemes are countered by Prince Doran’s patient, hidden plans. Meanwhile, Brienne of Tarth searches for Sansa, encountering outlaws and facing the terrifying Lady Stoneheart, the resurrected Catelyn Stark.&#xD;&#xD;&#xD;
         With much of the narrative focused on political maneuvering rather than large battles, A Feast for Crows explores the consequences of war and the fragile state of Westeros, setting the stage for the conflicts to come.</summary>
-        <price>20.10</price>
-        <author>
-          <name>George R. R. Martin</name>
-          <nationality>American</nationality>
-          <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
-          <photo>images/george.jpg</photo>
-        </author>
-      </book>
-      <book id="6">
-        <title>A Clash of Kings</title>
-        <year>1998</year>
-        <genre>	Epic fantasy, Political novel</genre>
-        <cover>images/clash-of-kings.jpg</cover>
-        <summary>A Clash of Kings, the second book in A Song of Ice and Fire by George R.R. Martin, follows the chaos that erupts after King Robert Baratheon's death as multiple claimants vie for the Iron Throne. In King’s Landing, young King Joffrey Baratheon rules cruelly, while Tyrion Lannister acts as Hand of the King, using his wit and political maneuvering to maintain Lannister control. Meanwhile, Stannis Baratheon, Robert’s eldest brother, declares himself the rightful king, aligning with the mysterious priestess Melisandre, who wields dark magic to assassinate his enemies. His brother, Renly Baratheon, also claims the throne but is mysteriously killed, likely by Melisandre’s magic.&#xD;&#xD;
-        Robb Stark continues his campaign in the North, winning battles but facing the challenge of securing alliances. In the Iron Islands, Balon Greyjoy declares himself King and sends his son, Theon Greyjoy, to take Winterfell, betraying the Starks. Theon’s rule is short-lived, as Winterfell falls into chaos when Ramsay Bolton's forces attack. Meanwhile, beyond the Wall, Jon Snow embarks on a dangerous mission with the Night’s Watch, encountering the growing threat of the Wildlings and their leader, Mance Rayder.&#xD;&#xD;
+    <price>20.10</price>
+    <author>
+      <name>George R. R. Martin</name>
+      <nationality>American</nationality>
+      <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
+      <photo>images/george.jpg</photo>
+    </author>
+  </book>
+  <book id="6">
+    <title>A Clash of Kings</title>
+    <year>1998</year>
+    <genre>	Epic fantasy, Political novel</genre>
+    <cover>images/clash-of-kings.jpg</cover>
+    <summary>A Clash of Kings, the second book in A Song of Ice and Fire by George R.R. Martin, follows the chaos that erupts after King Robert Baratheon's death as multiple claimants vie for the Iron Throne. In King’s Landing, young King Joffrey Baratheon rules cruelly, while Tyrion Lannister acts as Hand of the King, using his wit and political maneuvering to maintain Lannister control. Meanwhile, Stannis Baratheon, Robert’s eldest brother, declares himself the rightful king, aligning with the mysterious priestess Melisandre, who wields dark magic to assassinate his enemies. His brother, Renly Baratheon, also claims the throne but is mysteriously killed, likely by Melisandre’s magic.&#xD;&#xD;&#xD;
+        Robb Stark continues his campaign in the North, winning battles but facing the challenge of securing alliances. In the Iron Islands, Balon Greyjoy declares himself King and sends his son, Theon Greyjoy, to take Winterfell, betraying the Starks. Theon’s rule is short-lived, as Winterfell falls into chaos when Ramsay Bolton's forces attack. Meanwhile, beyond the Wall, Jon Snow embarks on a dangerous mission with the Night’s Watch, encountering the growing threat of the Wildlings and their leader, Mance Rayder.&#xD;&#xD;&#xD;
         Across the sea, Daenerys Targaryen and her small band of followers travel through the harsh Red Waste, eventually reaching Qarth, where she struggles to gain allies for her quest to reclaim the throne. The book culminates in the dramatic Battle of the Blackwater, where Stannis's forces attack King’s Landing but are ultimately defeated due to Tyrion’s strategic use of wildfire. As the war for the throne continues, alliances shift, betrayals unfold, and the realm descends further into conflict.</summary>
-        <price>26.9</price>
-        <author>
-          <name>George R. R. Martin</name>
-          <nationality>American</nationality>
-          <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
-          <photo>images/george.jpg</photo>
-        </author>
-      </book>
-      <book id="7">
-        <title>The Great Gatsby</title>
-        <year>1925</year>
-        <genre>Fiction</genre>
-        <cover>images/gatsby.jpg</cover>
-        <summary>The Great Gatsby by F. Scott Fitzgerald is a novel set in the Roaring Twenties, a time of wealth, excess, and social change in America. The story is narrated by Nick Carraway, a young man who moves to West Egg, Long Island, and becomes fascinated by his mysterious and wealthy neighbor, Jay Gatsby. Gatsby is known for throwing extravagant parties, but his true motive is to win back Daisy Buchanan, Nick’s cousin and Gatsby’s lost love.&#xD;&#xD;
-        Daisy, however, is married to Tom Buchanan, a wealthy and arrogant man who is having an affair with Myrtle Wilson, the wife of a struggling mechanic. As Nick gets drawn into Gatsby’s world, he learns that Gatsby’s fortune was built through shady dealings, all in hopes of rekindling his romance with Daisy. When Gatsby and Daisy finally reunite, their affair reignites, but Daisy ultimately chooses to stay with Tom.&#xD;&#xD;
-        Tensions rise, leading to a tragic accident when Daisy, driving Gatsby’s car, hits and kills Myrtle. Tom allows Myrtle’s husband, George Wilson, to believe that Gatsby was responsible. Seeking revenge, Wilson kills Gatsby and then himself. In the end, Gatsby’s lavish dream of love and success collapses, and he dies alone, with only Nick and a few others attending his funeral.&#xD;&#xD;
+    <price>26.9</price>
+    <author>
+      <name>George R. R. Martin</name>
+      <nationality>American</nationality>
+      <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
+      <photo>images/george.jpg</photo>
+    </author>
+  </book>
+  <book id="7">
+    <title>The Great Gatsby</title>
+    <year>1925</year>
+    <genre>Fiction</genre>
+    <cover>images/gatsby.jpg</cover>
+    <summary>The Great Gatsby by F. Scott Fitzgerald is a novel set in the Roaring Twenties, a time of wealth, excess, and social change in America. The story is narrated by Nick Carraway, a young man who moves to West Egg, Long Island, and becomes fascinated by his mysterious and wealthy neighbor, Jay Gatsby. Gatsby is known for throwing extravagant parties, but his true motive is to win back Daisy Buchanan, Nick’s cousin and Gatsby’s lost love.&#xD;&#xD;&#xD;
+        Daisy, however, is married to Tom Buchanan, a wealthy and arrogant man who is having an affair with Myrtle Wilson, the wife of a struggling mechanic. As Nick gets drawn into Gatsby’s world, he learns that Gatsby’s fortune was built through shady dealings, all in hopes of rekindling his romance with Daisy. When Gatsby and Daisy finally reunite, their affair reignites, but Daisy ultimately chooses to stay with Tom.&#xD;&#xD;&#xD;
+        Tensions rise, leading to a tragic accident when Daisy, driving Gatsby’s car, hits and kills Myrtle. Tom allows Myrtle’s husband, George Wilson, to believe that Gatsby was responsible. Seeking revenge, Wilson kills Gatsby and then himself. In the end, Gatsby’s lavish dream of love and success collapses, and he dies alone, with only Nick and a few others attending his funeral.&#xD;&#xD;&#xD;
         The novel explores themes of the American Dream, love, class, and illusion, showing how wealth and status cannot bring true happiness. Gatsby’s tragic pursuit of an unattainable dream makes The Great Gatsby a timeless critique of the shallow, materialistic culture of the 1920s.</summary>
-        <price>15.99</price>
-        <author>
-          <name>F. Scott Fitzgerald</name>
-          <nationality>American</nationality>
-          <bio>Francis Scott Key Fitzgerald (September 24, 1896 – December 21, 1940), widely known simply as Scott Fitzgerald,[1] was an American novelist, essayist, and short story writer. He is best known for his novels depicting the flamboyance and excess of the Jazz Age, a term he popularized in his short story collection Tales of the Jazz Age.</bio>
-          <photo>images/fitzgerald.jpg</photo>
-        </author>
-      </book>
-      <book id="8">
-        <title>A Storm of Swords</title>
-        <year>2000</year>
-        <genre>Fantasy</genre>
-        <cover>images/AStormOfSwords.jpg</cover>
-        <summary>A Storm of Swords, the third book in A Song of Ice and Fire by George R.R. Martin, continues the power struggles across Westeros and beyond. The War of the Five Kings rages on, but betrayal shifts the balance when Robb Stark and his forces are slaughtered at the infamous Red Wedding, orchestrated by House Frey and the Lannisters. In King’s Landing, the Lannisters consolidate power as Tyrion struggles against his own family. Joffrey Baratheon’s wedding to Margaery Tyrell takes a shocking turn when he is poisoned, leading to Tyrion’s imprisonment and trial. At the Wall, Jon Snow navigates his loyalty between the Night’s Watch and the Wildlings before helping defend Castle Black against Mance Rayder’s invasion, only for Stannis Baratheon to arrive and seize control. Meanwhile, Daenerys Targaryen continues her conquest in Essos, liberating slaves and solidifying her power in cities like Astapor and Yunkai. Arya Stark witnesses the brutal realities of war, traveling alongside The Hound before ultimately setting her sights on Braavos, guided by a mysterious coin given to her by Jaqen H’ghar. As alliances shift and betrayals unfold, the realm remains engulfed in chaos, setting the stage for even greater conflicts ahead.</summary>
-        <price>20.10</price>
-        <author>
-          <name>George R. R. Martin</name>
-          <nationality>American</nationality>
-          <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
-          <photo>images/george.jpg</photo>
-        </author>
-      </book>
-      <book id="9">
-        <title>He Who Drowned the World</title>
-        <year>2023</year>
-        <genre>Alternative history</genre>
-        <cover>images/He-Who-Drowned-World.jpg</cover>
-        <summary>He Who Drowned the World is a historical fantasy novel by Shelley Parker-Chan, and it is the sequel to She Who Became the Sun. The book continues the reimagined tale of the founding of the Ming Dynasty in 14th-century China, blending history with elements of magic and queer identity.&#xD;&#xD;
-        The story follows Zhu Yuanzhang, who has taken on the identity of her dead brother and risen to power as the Radiant King. Zhu is determined to claim the Mandate of Heaven and become emperor, but she faces fierce competition from other ambitious figures, including the cunning eunuch general Ouyang, who seeks vengeance and his own path to power. Meanwhile, Wang Baoxiang, a scholar with his own dark ambitions, manipulates events from the shadows.&#xD;&#xD;
+    <price>15.99</price>
+    <author>
+      <name>F. Scott Fitzgerald</name>
+      <nationality>American</nationality>
+      <bio>Francis Scott Key Fitzgerald (September 24, 1896 – December 21, 1940), widely known simply as Scott Fitzgerald,[1] was an American novelist, essayist, and short story writer. He is best known for his novels depicting the flamboyance and excess of the Jazz Age, a term he popularized in his short story collection Tales of the Jazz Age.</bio>
+      <photo>images/fitzgerald.jpg</photo>
+    </author>
+  </book>
+  <book id="8">
+    <title>A Storm of Swords</title>
+    <year>2000</year>
+    <genre>Fantasy</genre>
+    <cover>images/AStormOfSwords.jpg</cover>
+    <summary>A Storm of Swords, the third book in A Song of Ice and Fire by George R.R. Martin, continues the power struggles across Westeros and beyond. The War of the Five Kings rages on, but betrayal shifts the balance when Robb Stark and his forces are slaughtered at the infamous Red Wedding, orchestrated by House Frey and the Lannisters. In King’s Landing, the Lannisters consolidate power as Tyrion struggles against his own family. Joffrey Baratheon’s wedding to Margaery Tyrell takes a shocking turn when he is poisoned, leading to Tyrion’s imprisonment and trial. At the Wall, Jon Snow navigates his loyalty between the Night’s Watch and the Wildlings before helping defend Castle Black against Mance Rayder’s invasion, only for Stannis Baratheon to arrive and seize control. Meanwhile, Daenerys Targaryen continues her conquest in Essos, liberating slaves and solidifying her power in cities like Astapor and Yunkai. Arya Stark witnesses the brutal realities of war, traveling alongside The Hound before ultimately setting her sights on Braavos, guided by a mysterious coin given to her by Jaqen H’ghar. As alliances shift and betrayals unfold, the realm remains engulfed in chaos, setting the stage for even greater conflicts ahead.</summary>
+    <price>20.10</price>
+    <author>
+      <name>George R. R. Martin</name>
+      <nationality>American</nationality>
+      <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
+      <photo>images/george.jpg</photo>
+    </author>
+  </book>
+  <book id="9">
+    <title>He Who Drowned the World</title>
+    <year>2023</year>
+    <genre>Alternative history</genre>
+    <cover>images/He-Who-Drowned-World.jpg</cover>
+    <summary>He Who Drowned the World is a historical fantasy novel by Shelley Parker-Chan, and it is the sequel to She Who Became the Sun. The book continues the reimagined tale of the founding of the Ming Dynasty in 14th-century China, blending history with elements of magic and queer identity.&#xD;&#xD;&#xD;
+        The story follows Zhu Yuanzhang, who has taken on the identity of her dead brother and risen to power as the Radiant King. Zhu is determined to claim the Mandate of Heaven and become emperor, but she faces fierce competition from other ambitious figures, including the cunning eunuch general Ouyang, who seeks vengeance and his own path to power. Meanwhile, Wang Baoxiang, a scholar with his own dark ambitions, manipulates events from the shadows.&#xD;&#xD;&#xD;
         As alliances shift and betrayals unfold, the characters grapple with themes of identity, power, and destiny. The novel explores the cost of ambition and the lengths people will go to achieve their goals, often at great personal sacrifice. With its rich world-building, complex characters, and exploration of gender and power, He Who Drowned the World is a gripping conclusion to Parker-Chan's duology.</summary>
-        <price>20.10</price>
-        <author>
-          <name>Kerri Maniscalco</name>
-          <nationality>Australian</nationality>
-          <bio>Shelley Parker-Chan is a non-binary, Australian fantasy novelist best known for their debut novel, She Who Became the Sun and its sequel, He Who Drowned the World, which form The Radiant Emperor Duology.[1]</bio>
-          <photo>images/Shelley Parker-Chan.jpeg</photo>
-        </author>
-      </book>
-    </library>
-    <books>
-      <book id="1738767039148">
-        <title>salma book</title>
-        <year>2002</year>
-        <genre>fiction</genre>
-        <price>300</price>
-        <summary>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when anLorem Ipsum is simply dummy text of the printing and typesetting industry. </summary>
-        <cover>/images/cover-1738767039162.jpeg</cover>
-        <author>
-          <name>salma el bakkouri</name>
-          <nationality>moroccan</nationality>
-          <bio>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when anLorem Ipsum is simply dummy text of the printing and typesetting industry.</bio>
-          <photo>/images/authorPhoto-1738767039164.png</photo>
-        </author>
-      </book>
-    </books>
-  </root>
-  <books>
-    <book id="1738769920115">
-      <title>wissal book</title>
-      <year>2020</year>
-      <genre>science</genre>
-      <price>200</price>
-      <summary>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an ...Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</summary>
-      <cover>/images/cover-1738769920134.jpeg</cover>
-      <author>
-        <name>wissal bara</name>
-        <nationality>moroccan</nationality>
-        <bio>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an ...Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</bio>
-        <photo>/images/authorPhoto-1738769920139.png</photo>
-      </author>
-    </book>
-  </books>
-</root>
+    <price>20.10</price>
+    <author>
+      <name>Kerri Maniscalco</name>
+      <nationality>Australian</nationality>
+      <bio>Shelley Parker-Chan is a non-binary, Australian fantasy novelist best known for their debut novel, She Who Became the Sun and its sequel, He Who Drowned the World, which form The Radiant Emperor Duology.[1]</bio>
+      <photo>images/Shelley Parker-Chan.jpeg</photo>
+    </author>
+  </book>
+  <book id="10">
+    <title>wissal</title>
+    <year>8796</year>
+    <genre>hjjhjh</genre>
+    <cover>/images/cover-1738785976849.jpeg</cover>
+    <summary>khjhjhhh</summary>
+    <price>5786</price>
+    <author>
+      <name>jhhjhvhj</name>
+      <nationality>jhvjhv</nationality>
+      <bio>kjbbkb</bio>
+      <photo>/images/authorPhoto-1738785976852.jpg</photo>
+    </author>
+  </book>
+</library>
