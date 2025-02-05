@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
     <book id="1">
-        <title>The Great Gatsby</title>
-        <year>1925</year>
-        <genre>Fiction</genre>
-        <cover>images/gatsby.jpg</cover>
-        <summary>The Great Gatsby by F. Scott Fitzgerald is a novel set in the Roaring Twenties, a time of wealth, excess, and social change in America. The story is narrated by Nick Carraway, a young man who moves to West Egg, Long Island, and becomes fascinated by his mysterious and wealthy neighbor, Jay Gatsby. Gatsby is known for throwing extravagant parties, but his true motive is to win back Daisy Buchanan, Nick’s cousin and Gatsby’s lost love.
-        Daisy, however, is married to Tom Buchanan, a wealthy and arrogant man who is having an affair with Myrtle Wilson, the wife of a struggling mechanic. As Nick gets drawn into Gatsby’s world, he learns that Gatsby’s fortune was built through shady dealings, all in hopes of rekindling his romance with Daisy. When Gatsby and Daisy finally reunite, their affair reignites, but Daisy ultimately chooses to stay with Tom.
-        Tensions rise, leading to a tragic accident when Daisy, driving Gatsby’s car, hits and kills Myrtle. Tom allows Myrtle’s husband, George Wilson, to believe that Gatsby was responsible. Seeking revenge, Wilson kills Gatsby and then himself. In the end, Gatsby’s lavish dream of love and success collapses, and he dies alone, with only Nick and a few others attending his funeral.
-        The novel explores themes of the American Dream, love, class, and illusion, showing how wealth and status cannot bring true happiness. Gatsby’s tragic pursuit of an unattainable dream makes The Great Gatsby a timeless critique of the shallow, materialistic culture of the 1920s.</summary>
+        <title>Harry Potter and the Half-Blood Prince</title>
+        <year>2005</year>
+        <genre>Fantasy</genre>
+        <cover>images/harry.jpg</cover>
+        <summary>In the sixth installment of the Harry Potter series, the wizarding world trembles as dark forces tighten their grip and shadows lengthen over Hogwarts School of Witchcraft and Wizardry. Harry Potter returns for another tumultuous year where, amid growing fear and uncertainty, he is thrust into an intricate mystery surrounding the past of Lord Voldemort. Under the careful tutelage of Albus Dumbledore, Harry embarks on a perilous journey to uncover the secrets behind the Dark Lord’s immortality—learning about Horcruxes, the cursed objects that hold fragments of Voldemort's soul, and which must be destroyed if there is any hope of defeating him once and for all. Alongside his loyal friends Ron and Hermione, Harry navigates complex relationships, the resurgence of dangerous enemies, and the mysterious clues hidden within a long-forgotten potions textbook credited to the enigmatic “Half-Blood Prince.” As subtle betrayals and unexpected alliances surface within the castle walls, Harry finds himself not only deep in the study of magic but also in a battle of wits and will that challenges his understanding of loyalty, sacrifice, and the true cost of power. With each revelation, the stakes rise ever higher, setting the stage for the ultimate confrontation between the forces of good and the encroaching darkness.</summary>
         <price>15.99</price>
         <author>
-            <name>F. Scott Fitzgerald</name>
-            <nationality>American</nationality>
-            <bio>Francis Scott Key Fitzgerald (September 24, 1896 – December 21, 1940), widely known simply as Scott Fitzgerald,[1] was an American novelist, essayist, and short story writer. He is best known for his novels depicting the flamboyance and excess of the Jazz Age, a term he popularized in his short story collection Tales of the Jazz Age.</bio>
-            <photo>images/fitzgerald.jpg</photo>
+            <name>J.K. Rowling</name>
+            <nationality>British</nationality>
+            <bio> Joanne Rowling, better known as J.K. Rowling, is a British author celebrated for creating the Harry Potter series. Her imaginative storytelling and richly detailed magical world have captivated readers of all ages, inspiring a generation and leaving an indelible mark on modern literature.</bio>
+            <photo>images/rowling.jpg</photo>
         </author>
     </book>
+
 
     <book id="2">
         <title>1984</title>
@@ -72,38 +70,6 @@
     </book>
 
     <book id="5">
-        <title>A Clash of Kings</title>
-        <year>1998</year>
-        <genre>	Epic fantasy, Political novel</genre>
-        <cover>images/clash-of-kings.jpg</cover>
-        <summary>A Clash of Kings, the second book in A Song of Ice and Fire by George R.R. Martin, follows the chaos that erupts after King Robert Baratheon's death as multiple claimants vie for the Iron Throne. In King’s Landing, young King Joffrey Baratheon rules cruelly, while Tyrion Lannister acts as Hand of the King, using his wit and political maneuvering to maintain Lannister control. Meanwhile, Stannis Baratheon, Robert’s eldest brother, declares himself the rightful king, aligning with the mysterious priestess Melisandre, who wields dark magic to assassinate his enemies. His brother, Renly Baratheon, also claims the throne but is mysteriously killed, likely by Melisandre’s magic.
-        Robb Stark continues his campaign in the North, winning battles but facing the challenge of securing alliances. In the Iron Islands, Balon Greyjoy declares himself King and sends his son, Theon Greyjoy, to take Winterfell, betraying the Starks. Theon’s rule is short-lived, as Winterfell falls into chaos when Ramsay Bolton's forces attack. Meanwhile, beyond the Wall, Jon Snow embarks on a dangerous mission with the Night’s Watch, encountering the growing threat of the Wildlings and their leader, Mance Rayder.
-        Across the sea, Daenerys Targaryen and her small band of followers travel through the harsh Red Waste, eventually reaching Qarth, where she struggles to gain allies for her quest to reclaim the throne. The book culminates in the dramatic Battle of the Blackwater, where Stannis's forces attack King’s Landing but are ultimately defeated due to Tyrion’s strategic use of wildfire. As the war for the throne continues, alliances shift, betrayals unfold, and the realm descends further into conflict.</summary>
-        <price>26.9</price>
-        <author>
-            <name>George R. R. Martin</name>
-            <nationality>American</nationality>
-            <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
-            <photo>images/george.jpg</photo>
-        </author>
-    </book>
-
-    <book id="6">
-        <title>A Storm of Swords</title>
-        <year>2000</year>
-        <genre>Fantasy</genre>
-        <cover>images/AStormOfSwords.jpg</cover>
-        <summary>A Storm of Swords, the third book in A Song of Ice and Fire by George R.R. Martin, continues the power struggles across Westeros and beyond. The War of the Five Kings rages on, but betrayal shifts the balance when Robb Stark and his forces are slaughtered at the infamous Red Wedding, orchestrated by House Frey and the Lannisters. In King’s Landing, the Lannisters consolidate power as Tyrion struggles against his own family. Joffrey Baratheon’s wedding to Margaery Tyrell takes a shocking turn when he is poisoned, leading to Tyrion’s imprisonment and trial. At the Wall, Jon Snow navigates his loyalty between the Night’s Watch and the Wildlings before helping defend Castle Black against Mance Rayder’s invasion, only for Stannis Baratheon to arrive and seize control. Meanwhile, Daenerys Targaryen continues her conquest in Essos, liberating slaves and solidifying her power in cities like Astapor and Yunkai. Arya Stark witnesses the brutal realities of war, traveling alongside The Hound before ultimately setting her sights on Braavos, guided by a mysterious coin given to her by Jaqen H’ghar. As alliances shift and betrayals unfold, the realm remains engulfed in chaos, setting the stage for even greater conflicts ahead.</summary>
-        <price>20.10</price>
-        <author>
-            <name>George R. R. Martin</name>
-            <nationality>American</nationality>
-            <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
-            <photo>images/george.jpg</photo>
-        </author>
-    </book>
-
-        <book id="7">
         <title>A Feast for Crows</title>
         <year>2005</year>
         <genre>Fantasy</genre>
@@ -120,7 +86,58 @@
         </author>
     </book>
 
-        <book id="8">
+    <book id="6">
+        <title>A Clash of Kings</title>
+        <year>1998</year>
+        <genre>	Epic fantasy, Political novel</genre>
+        <cover>images/clash-of-kings.jpg</cover>
+        <summary>A Clash of Kings, the second book in A Song of Ice and Fire by George R.R. Martin, follows the chaos that erupts after King Robert Baratheon's death as multiple claimants vie for the Iron Throne. In King’s Landing, young King Joffrey Baratheon rules cruelly, while Tyrion Lannister acts as Hand of the King, using his wit and political maneuvering to maintain Lannister control. Meanwhile, Stannis Baratheon, Robert’s eldest brother, declares himself the rightful king, aligning with the mysterious priestess Melisandre, who wields dark magic to assassinate his enemies. His brother, Renly Baratheon, also claims the throne but is mysteriously killed, likely by Melisandre’s magic.
+        Robb Stark continues his campaign in the North, winning battles but facing the challenge of securing alliances. In the Iron Islands, Balon Greyjoy declares himself King and sends his son, Theon Greyjoy, to take Winterfell, betraying the Starks. Theon’s rule is short-lived, as Winterfell falls into chaos when Ramsay Bolton's forces attack. Meanwhile, beyond the Wall, Jon Snow embarks on a dangerous mission with the Night’s Watch, encountering the growing threat of the Wildlings and their leader, Mance Rayder.
+        Across the sea, Daenerys Targaryen and her small band of followers travel through the harsh Red Waste, eventually reaching Qarth, where she struggles to gain allies for her quest to reclaim the throne. The book culminates in the dramatic Battle of the Blackwater, where Stannis's forces attack King’s Landing but are ultimately defeated due to Tyrion’s strategic use of wildfire. As the war for the throne continues, alliances shift, betrayals unfold, and the realm descends further into conflict.</summary>
+        <price>26.9</price>
+        <author>
+            <name>George R. R. Martin</name>
+            <nationality>American</nationality>
+            <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
+            <photo>images/george.jpg</photo>
+        </author>
+    </book>
+
+    <book id="7">
+        <title>The Great Gatsby</title>
+        <year>1925</year>
+        <genre>Fiction</genre>
+        <cover>images/gatsby.jpg</cover>
+        <summary>The Great Gatsby by F. Scott Fitzgerald is a novel set in the Roaring Twenties, a time of wealth, excess, and social change in America. The story is narrated by Nick Carraway, a young man who moves to West Egg, Long Island, and becomes fascinated by his mysterious and wealthy neighbor, Jay Gatsby. Gatsby is known for throwing extravagant parties, but his true motive is to win back Daisy Buchanan, Nick’s cousin and Gatsby’s lost love.
+        Daisy, however, is married to Tom Buchanan, a wealthy and arrogant man who is having an affair with Myrtle Wilson, the wife of a struggling mechanic. As Nick gets drawn into Gatsby’s world, he learns that Gatsby’s fortune was built through shady dealings, all in hopes of rekindling his romance with Daisy. When Gatsby and Daisy finally reunite, their affair reignites, but Daisy ultimately chooses to stay with Tom.
+        Tensions rise, leading to a tragic accident when Daisy, driving Gatsby’s car, hits and kills Myrtle. Tom allows Myrtle’s husband, George Wilson, to believe that Gatsby was responsible. Seeking revenge, Wilson kills Gatsby and then himself. In the end, Gatsby’s lavish dream of love and success collapses, and he dies alone, with only Nick and a few others attending his funeral.
+        The novel explores themes of the American Dream, love, class, and illusion, showing how wealth and status cannot bring true happiness. Gatsby’s tragic pursuit of an unattainable dream makes The Great Gatsby a timeless critique of the shallow, materialistic culture of the 1920s.</summary>
+        <price>15.99</price>
+        <author>
+            <name>F. Scott Fitzgerald</name>
+            <nationality>American</nationality>
+            <bio>Francis Scott Key Fitzgerald (September 24, 1896 – December 21, 1940), widely known simply as Scott Fitzgerald,[1] was an American novelist, essayist, and short story writer. He is best known for his novels depicting the flamboyance and excess of the Jazz Age, a term he popularized in his short story collection Tales of the Jazz Age.</bio>
+            <photo>images/fitzgerald.jpg</photo>
+        </author>
+    </book>
+    <book id="8">
+        <title>A Storm of Swords</title>
+        <year>2000</year>
+        <genre>Fantasy</genre>
+        <cover>images/AStormOfSwords.jpg</cover>
+        <summary>A Storm of Swords, the third book in A Song of Ice and Fire by George R.R. Martin, continues the power struggles across Westeros and beyond. The War of the Five Kings rages on, but betrayal shifts the balance when Robb Stark and his forces are slaughtered at the infamous Red Wedding, orchestrated by House Frey and the Lannisters. In King’s Landing, the Lannisters consolidate power as Tyrion struggles against his own family. Joffrey Baratheon’s wedding to Margaery Tyrell takes a shocking turn when he is poisoned, leading to Tyrion’s imprisonment and trial. At the Wall, Jon Snow navigates his loyalty between the Night’s Watch and the Wildlings before helping defend Castle Black against Mance Rayder’s invasion, only for Stannis Baratheon to arrive and seize control. Meanwhile, Daenerys Targaryen continues her conquest in Essos, liberating slaves and solidifying her power in cities like Astapor and Yunkai. Arya Stark witnesses the brutal realities of war, traveling alongside The Hound before ultimately setting her sights on Braavos, guided by a mysterious coin given to her by Jaqen H’ghar. As alliances shift and betrayals unfold, the realm remains engulfed in chaos, setting the stage for even greater conflicts ahead.</summary>
+        <price>20.10</price>
+        <author>
+            <name>George R. R. Martin</name>
+            <nationality>American</nationality>
+            <bio>George Raymond Richard Martin[1] (born George Raymond Martin; September 20, 1948)[2] also known by the initials G.R.R.M.[3] is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series and contributed worldbuilding for the video game Elden Ring (2022).</bio>
+            <photo>images/george.jpg</photo>
+        </author>
+    </book>
+
+    
+
+    <book id="9">
         <title>He Who Drowned the World</title>
         <year>2023</year>
         <genre>Alternative history</genre>

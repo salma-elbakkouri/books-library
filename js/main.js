@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('search-input').addEventListener('input', filterBooks);
 });
 
-let xmlDoc; // Store the XML document globally for reuse
+let xmlDoc; 
 
 function loadXML() {
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
-            xmlDoc = this.responseXML; // Store the XML document
-            displayBooks(xmlDoc); // Display all books initially
+            xmlDoc = this.responseXML; 
+            displayBooks(xmlDoc); 
         }
     };
     xhttp.open("GET", "data/books.xml", true);
@@ -45,7 +45,7 @@ function displayBooks(xml) {
 
         booksContainer.appendChild(bookCard);
 
-        book = books.iterateNext(); // Move to the next book
+        book = books.iterateNext();
     }
     initializeCarousel();
 }
@@ -56,7 +56,7 @@ function initializeCarousel() {
     const next = document.querySelector(".next");
 
     let index = 0;
-    const bookWidth = document.querySelector(".book-card").offsetWidth + 20; // Including margin
+    const bookWidth = document.querySelector(".book-card").offsetWidth + 20;
     const visibleBooks = 5; 
 
     next.addEventListener("click", () => {
@@ -77,7 +77,7 @@ function initializeCarousel() {
 function filterBooks() {
     const searchText = document.getElementById('search-input').value.toLowerCase();
     const booksContainer = document.getElementById("book-list");
-    booksContainer.innerHTML = ''; // Clear current books
+    booksContainer.innerHTML = '';
 
     const query = `//book[contains(translate(title, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '${searchText}') or contains(translate(author, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '${searchText}')]`;
     const filteredBooks = xmlDoc.evaluate(query, xmlDoc, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
@@ -108,7 +108,7 @@ function filterBooks() {
 
         booksContainer.appendChild(bookCard);
 
-        book = filteredBooks.iterateNext(); // Move to the next book
+        book = filteredBooks.iterateNext();
     }
 
     if (!found) {

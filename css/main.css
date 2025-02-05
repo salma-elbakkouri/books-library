@@ -8,8 +8,8 @@ body {
 
 .container {
     padding: 20px 40px;
-    background: linear-gradient(to right, #F1EEE3 61%, #FFFBF3 38%);
-    margin: 30px 80px;
+    background: linear-gradient(to right, #F1EEE3 62.7%, #FFFBF3 38%);
+    margin: 50px 180px;
     border-radius: 10px;
     border: 5px solid #D7D3CE;
     display: flex;
@@ -47,7 +47,7 @@ body {
 .intro {
     display: flex;
     align-items: center;
-    gap: 160px;
+    gap: 170px;
 }
 
 .left {
