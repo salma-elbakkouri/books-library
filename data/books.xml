@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+    <book id="1">
+        <title>The Great Gatsby</title>
+        <year>1925</year>
+        <genre>Fiction</genre>
+        <cover>images/gatsby.png</cover>
+        <summary>A novel by F. Scott Fitzgerald about the American dream.</summary>
+        <price>15.99</price>
+        <author>
+            <name>F. Scott Fitzgerald</name>
+            <nationality>American</nationality>
+            <email>fitzgerald@example.com</email>
+            <bio>F. Scott Fitzgerald was a novelist known for his works on the Jazz Age.</bio>
+            <photo>images/fitzgerald.jpg</photo>
+        </author>
+    </book>
+
+    <book id="2">
+        <title>1984</title>
+        <year>1949</year>
+        <genre>Dystopian</genre>
+        <cover>images/1984.jpg</cover>
+        <summary>A novel by George Orwell about a totalitarian regime.</summary>
+        <price>12.99</price>
+        <author>
+            <name>George Orwell</name>
+            <nationality>British</nationality>
+            <email>orwell@example.com</email>
+            <bio>George Orwell was a writer and journalist, famous for dystopian fiction.</bio>
+            <photo>images/orwell.jpg</photo>
+        </author>
+    </book>
+
+    <book id="3">
+        <title>To Kill a Mockingbird</title>
+        <year>1960</year>
+        <genre>Classic</genre>
+        <cover>images/mockingbird.jpg</cover>
+        <summary>A novel by Harper Lee about racial injustice.</summary>
+        <price>10.99</price>
+        <author>
+            <name>Harper Lee</name>
+            <nationality>American</nationality>
+            <email>lee@example.com</email>
+            <bio>Harper Lee was an American novelist best known for "To Kill a Mockingbird".</bio>
+            <photo>images/harper.jpg</photo>
+        </author>
+    </book>
+</library>
