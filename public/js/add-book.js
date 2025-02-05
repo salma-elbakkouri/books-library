@@ -4,6 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
   addBookForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
+    const yearPublication = document.getElementById("year").value;
+
+    if (!/^\d{4}$/.test(yearPublication)) {
+      alert("⚠️ Year must be 4 digits (e.g., 2025)");
+      return; // Bloquer l'envoi
+    }
+
     // Confirmation box
     if (!confirm("Are you sure you want to add this book?")) {
       return;
