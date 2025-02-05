@@ -136,7 +136,13 @@ body {
     height: 180px;
     object-fit: cover;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.404);
+    transition: transform 0.3s ease-in-out;
 }
+  
+  .book-card img:hover {
+    transform: scale(1.12);
+  }
+  
 
 .book-card h3 {
     margin-top: 10px;

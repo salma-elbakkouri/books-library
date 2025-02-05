@@ -28,6 +28,8 @@ function displayBooks(xml) {
         const title = xml.evaluate('title/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
         const author = xml.evaluate('author/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
         const cover = xml.evaluate('cover/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
+        
+        const id = book.getAttribute('id');
 
         const bookCard = document.createElement("div");
         bookCard.className = "book-card";
@@ -43,12 +45,20 @@ function displayBooks(xml) {
         bookCard.appendChild(bookImage);
         bookCard.appendChild(bookTitle);
 
+        bookCard.addEventListener("click", () => {
+            window.location.href = `book-detail.html?id=${id}`;
+            console.log("Navigating to book with id:", id);
+        });
+
         booksContainer.appendChild(bookCard);
 
         book = books.iterateNext();
     }
+
     initializeCarousel();
 }
+
+
 
 function initializeCarousel() {
     const books = document.querySelector(".books");
@@ -118,3 +128,4 @@ function filterBooks() {
         booksContainer.appendChild(noResults);
     }
 }
+
