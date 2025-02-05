@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    background: linear-gradient(to right, #C8C5BB 60%, #D9D7CA 40%);
+    font-family: 'Reddit Mono', monospace;
+}
+
+.container {
+    padding: 20px 40px;
+    background: linear-gradient(to bottom, #F1EEE3 40%, #fffcf7 60%);
+    margin: 50px 180px;
+    border-radius: 10px;
+    border: 5px solid #D7D3CE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-cover-container img {
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.313);
+    border-radius: 8px;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-info h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.author-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1rem ;
+    margin-bottom: 0;
+}
+
+.author-bio {
+    font-weight: 400;
+    color: #444;
+    margin: 0.4rem 0;
+}
+.book-details {
+    flex: 1;
+    margin-top: 10px;
+    display: flex;
+    gap: 2rem;
+}
+
+.book-details .detail-item h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.book-details .detail-item p {
+    margin: 0.25rem 0 0;
+    color: #555;
+}
+.buttons
+{
+    margin-top: 20px;
+}
+
+.export-btn {
+    background-color: #454e97;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 12px 40px;
+    cursor: pointer;
+}
+
+.export-btn:hover {
+    background-color: #2c2e41;
+}
+.delete-btn {
+    background-color: #c11a1ae8;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 12px 40px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #801212e8;
+}
+
+
+.main-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.summary-section {
+    flex: 2;
+}
+
+.summary-section h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.summary-section p {
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.author-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.author-section img {
+    height: 100px;
+    border-radius: 5px;
+    /* Round image */
+    object-fit: cover;
+}
+
+.author-details .author-name {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.author-details .author-bio {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.scale-wrapper {
+    transform: scale(0.9);
+    transform-origin: top center;
+    width: 102%; 
+  }
+  

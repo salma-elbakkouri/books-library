@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Book</title>
+  <link rel="icon" href="./images/icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/add-book.css" />
+</head>
+<body>
+  <div class="scale-wrapper">
+    <div class="container">
+      <form id="addBookForm" action="#" method="POST" enctype="multipart/form-data">
+        <fieldset class="book-info-fieldset">
+          <legend>Book Information</legend>
+          <div class="form-grid">
+            <div class="form-section">
+              <label for="title">Book Title</label>
+              <input type="text" id="title" name="title" placeholder="Enter book title" required />
+            </div>
+            <div class="form-section">
+              <label for="year">Year</label>
+              <input type="number" id="year" name="year" placeholder="Enter publication year" required />
+            </div>
+            <div class="form-section">
+              <label for="genre">Genre</label>
+              <input type="text" id="genre" name="genre" placeholder="Enter genre" required />
+            </div>
+            <div class="form-section">
+              <label for="price">Price</label>
+              <input type="text" id="price" name="price" placeholder="Enter price" required />
+            </div>
+            <div class="form-section">
+              <label for="cover">Cover Image</label>
+              <input type="file" id="cover" name="cover" accept="image/*" required />
+            </div>
+            <div class="form-section full-width">
+              <label for="summary">Summary</label>
+              <textarea id="summary" name="summary" placeholder="Enter book summary" rows="3" required></textarea>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="author-fieldset">
+          <legend>Author Details</legend>
+          <div class="form-grid">
+            <div class="form-section">
+              <label for="authorName">Author Name</label>
+              <input type="text" id="authorName" name="authorName" placeholder="Enter author's name" required />
+            </div>
+            <div class="form-section">
+              <label for="nationality">Nationality</label>
+              <input type="text" id="nationality" name="nationality" placeholder="Enter author's nationality" required />
+            </div>
+            <div class="form-section full-width">
+              <label for="authorBio">Author Bio</label>
+              <textarea id="authorBio" name="authorBio" placeholder="Enter author bio" rows="2" required></textarea>
+            </div>
+            <div class="form-section">
+              <label for="authorPhoto">Author Photo</label>
+              <input type="file" id="authorPhoto" name="authorPhoto" accept="image/*" required />
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-buttons">
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./js/add-book.js" defer></script>
+</body>
+</html>
