@@ -3,14 +3,8 @@ const path = require('path');
 const fs = require('fs');
 const multer = require('multer');
 const xml2js = require('xml2js');
-
-const { DOMParser, XMLSerializer } = require('xmldom');
-const xpath = require('xpath');
-const { exec } = require('child_process');
-
-// NEW: Use libxslt and libxmljs for XSLT processing
-// const libxslt   = require('libxslt');
-// const libxmljs  = require('libxmljs');
+const xsltProcessor = require('xslt-processor');
+const puppeteer = require('puppeteer');
 
 const app = express();
 const PORT = 3000;
@@ -22,34 +16,21 @@ const storage = multer.diskStorage({
   },
   filename: (req, file, cb) => {
     const uniqueSuffix = Date.now() + path.extname(file.originalname);
-    // Prefix with the field name to differentiate files (e.g., cover, authorPhoto)
     cb(null, file.fieldname + '-' + uniqueSuffix);
   }
 });
 const upload = multer({ storage: storage });
 
-// Parse URL-encoded bodies (for form submissions)
 app.use(express.urlencoded({ extended: true }));
-
-// Serve static files from the "public" folder
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Serve the XML data folder statically so it can be fetched by the client
 app.use('/data', express.static(path.join(__dirname, 'data')));
 
-// GET route to serve the Add Book HTML form (if needed)
-app.get('/addBook', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'add-book.html'));
-});
-
-// POST endpoint to add a new book
 app.post('/addBook', upload.fields([
   { name: 'cover', maxCount: 1 },
   { name: 'authorPhoto', maxCount: 1 }
 ]), (req, res) => {
-  const { title, year, genre, price, summary, authorName, nationality, authorBio, id } = req.body;
+  const { title, year, genre, price, summary, authorName, nationality, authorBio } = req.body;
 
-  // Use the generated filename (stored in public/images) for the image paths
   const coverFileName = req.files['cover']
     ? '/images/' + req.files['cover'][0].filename
     : "/images/defaultCover.jpg";
@@ -72,22 +53,25 @@ app.post('/addBook', upload.fields([
         return res.json({ success: false, error: 'Error parsing XML' });
       }
 
-      // Ensure the structure exists
-      if (!result.books) {
-        result.books = {};
-      }
-      if (!result.books.book) {
-        result.books.book = [];
+      // Ensure we access the correct XML structure
+      const library = result.library || { book: [] };
+
+      // Find the highest existing book ID and increment it
+      let newId = 1;
+      if (library.book && library.book.length > 0) {
+        const lastBook = library.book[library.book.length - 1];
+        newId = parseInt(lastBook.$.id, 10) + 1;
       }
 
+      // New book entry
       const newBook = {
-        $: { id: id },
+        $: { id: newId.toString() },
         title: [title],
         year: [year],
         genre: [genre],
-        price: [price],
-        summary: [summary],
         cover: [coverFileName],
+        summary: [summary],
+        price: [price],
         author: [{
           name: [authorName],
           nationality: [nationality],
@@ -96,47 +80,116 @@ app.post('/addBook', upload.fields([
         }]
       };
 
-      result.books.book.push(newBook);
 
+      // Append new book to the list
+      library.book.push(newBook);
+
+      // Build the new XML while keeping <library> as root
       const builder = new xml2js.Builder();
-      const newXml = builder.buildObject(result);
+      const newXml = builder.buildObject({ library });
 
       fs.writeFile(xmlFilePath, newXml, (writeErr) => {
         if (writeErr) {
           console.error('Error writing XML:', writeErr);
           return res.json({ success: false, error: 'Error writing XML file' });
         }
-
         console.log("New book added:", newBook);
-        return res.json({ success: true });
+        return res.json({ success: true, newId });
       });
     });
   });
 });
 
-/// GET endpoint to export a book as PDF
-app.get('/export-book', (req, res) => {
+
+// New endpoint for exporting book to PDF using only Node packages
+app.get('/export-book', async (req, res) => {
   const bookId = req.query.id;
-  if (!bookId) return res.status(400).send("No book id provided.");
+  console.log(`Received export request for book id: ${bookId}`);
 
   const xmlFilePath = path.join(__dirname, 'data', 'books.xml');
-  fs.readFile(xmlFilePath, 'utf8', (err, xmlData) => {
-    if (err) {
-      console.error('Error reading XML file:', err);
-      return res.status(500).send('Error reading XML file');
+  fs.readFile(xmlFilePath, 'utf-8', (readErr, data) => {
+    if (readErr) {
+      console.error('Error reading XML:', readErr);
+      return res.status(500).send("Server error reading XML file.");
     }
+    console.log('Successfully read books.xml');
 
-    // Use DOMParser and xpath to locate the book node (works for both <library> and <books>)
-    const doc = new DOMParser().parseFromString(xmlData, 'text/xml');
-    let bookNode = xpath.select1(`//book[@id='${bookId}']`, doc);
-    if (!bookNode) {
-      return res.status(404).send('Book not found');
-    }
+    xml2js.parseString(data, async (parseErr, result) => {
+      if (parseErr) {
+        console.error('Error parsing XML:', parseErr);
+        return res.status(500).send("Server error parsing XML file.");
+      }
+      console.log('Successfully parsed XML');
 
-    // Use XMLSerializer to convert the node to a string
-    const serializer = new XMLSerializer();
-    const bookNodeStr = serializer.serializeToString(bookNode);
-  
+      // Adjust in case your XML root is <library> instead of <books>
+      const books = result.library ? result.library.book : (result.books ? result.books.book : []);
+      const book = books.find(b => b.$.id === bookId);
+      if (!book) {
+        console.error('No book found with id=', bookId);
+        return res.status(404).send("Book not found.");
+      }
+      console.log('Book found:', book);
+
+      // Wrap the book in a root element (<export>) for transformation
+      const exportObj = { export: { book } };
+      const builder = new xml2js.Builder({ headless: true });
+      const exportXmlStr = builder.buildObject(exportObj);
+      console.log('Export XML:', exportXmlStr);
+
+      // Read the XSL file (assumed to be in the data folder as transform.xsl)
+      const xsltPath = path.join(__dirname, 'data', 'transform.xsl');
+      let xsltStr;
+      try {
+        xsltStr = fs.readFileSync(xsltPath, 'utf-8');
+        console.log('Loaded transform.xsl');
+      } catch (err) {
+        console.error('Error reading XSL file:', err);
+        return res.status(500).send("Error reading XSL file.");
+      }
+
+      // Parse XML and XSL strings into objects for xslt-processor
+      let xmlObj, xslObj;
+      try {
+        xmlObj = xsltProcessor.xmlParse(exportXmlStr);
+        xslObj = xsltProcessor.xmlParse(xsltStr);
+      } catch (err) {
+        console.error('Error parsing XML/XSL strings:', err);
+        return res.status(500).send("Error parsing XML or XSL.");
+      }
+
+      // Transform XML to HTML
+      let htmlStr;
+      try {
+        htmlStr = xsltProcessor.xsltProcess(xmlObj, xslObj);
+        console.log('XSLT transformation completed.');
+      } catch (err) {
+        console.error('Error during XSLT transformation:', err);
+        return res.status(500).send("Error during XSLT transformation.");
+      }
+
+
+      // Use Puppeteer to convert HTML to PDF
+      (async () => {
+        let browser;
+        try {
+          browser = await puppeteer.launch({ headless: true });
+          const page = await browser.newPage();
+          await page.setContent(htmlStr, { waitUntil: 'networkidle0' });
+          const pdfBuffer = await page.pdf({ format: 'A4' });
+          await browser.close();
+          console.log('PDF conversion completed.');
+
+          // Set headers for download
+          res.setHeader('Content-Disposition', `attachment; filename=book-${bookId}.pdf`);
+          res.setHeader('Content-Type', 'application/pdf');
+          res.send(pdfBuffer);
+        } catch (err) {
+          console.error('Error during PDF conversion:', err);
+          if (browser) await browser.close();
+          return res.status(500).send("Error converting HTML to PDF.");
+        }
+      })();
+    });
   });
 });
 
