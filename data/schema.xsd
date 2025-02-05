@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-	<!-- Simple Type for Email (with basic email format validation) -->
 	<xs:simpleType name="emailType">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
 		</xs:restriction>
 	</xs:simpleType>
 	
-	<!-- Simple Type for Price (numeric, with a maximum of two decimal places) -->
 	<xs:simpleType name="priceType">
 		<xs:restriction base="xs:decimal">
 			<xs:fractionDigits value="2"/>
 		</xs:restriction>
 	</xs:simpleType>
 	
-	<!-- Complex Type for Author -->
 	<xs:complexType name="authorType">
 		<xs:sequence>
 			<xs:element name="name" type="xs:string"/>
@@ -25,8 +22,7 @@
 			<xs:element name="photo" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
-	
-	<!-- Complex Type for Book -->
+
 	<xs:complexType name="bookType">
 		<xs:sequence>
 			<xs:element name="title" type="xs:string"/>
@@ -37,15 +33,12 @@
 			<xs:element name="price" type="priceType"/>
 			<xs:element name="author" type="authorType"/>
 		</xs:sequence>
-		<!-- Add the id attribute here -->
 		<xs:attribute name="id" type="xs:int" use="required"/>
 	</xs:complexType>
 	
-	<!-- Root Element (Library) -->
 	<xs:element name="library">
 		<xs:complexType>
 			<xs:sequence>
-				<!-- List of books, with any number of books -->
 				<xs:element name="book" type="bookType" maxOccurs="unbounded"/>
 			</xs:sequence>
 		</xs:complexType>
