@@ -79,7 +79,7 @@ body {
     margin-top: 20px;
 }
 
-.edit-btn {
+.export-btn {
     background-color: #454e97;
     border: none;
     color: white;
@@ -90,7 +90,7 @@ body {
     cursor: pointer;
 }
 
-.edit-btn:hover {
+.export-btn:hover {
     background-color: #2c2e41;
 }
 .delete-btn {
@@ -107,6 +107,7 @@ body {
 .delete-btn:hover {
     background-color: #801212e8;
 }
+
 
 .main-content {
     display: flex;

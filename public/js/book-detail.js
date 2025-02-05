@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Load XML and display the book details for the specified id
   loadXMLAndDisplayBook(bookId);
+
+  // Add event listener for Export Book button
+  document.getElementById('export-btn').addEventListener('click', function() {
+    // Redirect to the export endpoint so that the server returns the PDF
+    window.location.href = `/export-book?id=${bookId}`;
+  });
 });
 
 function loadXMLAndDisplayBook(bookId) {
@@ -13,7 +19,7 @@ function loadXMLAndDisplayBook(bookId) {
     if (this.readyState === 4 && this.status === 200) {
       const xmlDoc = this.responseXML;
 
-      // XPath to find the book with the matching id
+      // XPath to find the book with the matching id (searches in both library and books)
       const query = `//book[@id='${bookId}']`;
       const result = xmlDoc.evaluate(
         query,
