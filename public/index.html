@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Library</title>
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="scale-wrapper">
+        <div class="container">
+            <div class="header">
+                <i class="fa fa-search icon"></i>
+                <input type="text" id="search-input" placeholder="Search book by name, author, edition...">
+            </div>
+            <div class="intro">
+                <div class="left">
+                    <h2>Welcome to Books Library</h2>
+                    <p>Explore a digital library powered by XML technologies. With XSLT for export, XQuery for search,
+                        and DOM for managing books, our system offers a seamless way to find and organize your favorite
+                        reads</p>
+                </div>
+                <div class="right">
+                    <img src="./images/logo.png" alt="Book cover">
+                    <div>
+                        <p>"A room without books is like a body without a soul."</p>
+                        <p>Find your next great read today!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="books-container">
+                <button class="addButton" id="addButton">Add Book</button>
+                <div class="carousel">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="book-wrapper">
+                        <div id="book-list" class="books"></div>
+                    </div>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js" defer></script>
+</body>
+</html>

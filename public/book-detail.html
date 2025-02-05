@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/book-detail.css" />
+</head>
+<body>
+    <div class="scale-wrapper">
+      <div class="container">
+        <div class="top-section">
+          <div class="book-cover-container">
+            <img id="book-cover" src="" alt="Book Cover">
+          </div>
+          <div class="book-info">
+            <h1 id="book-title"></h1>
+            <p class="author-name" id="book-author"></p>
+            <p class="author-bio" id="author-bio"></p>
+            <div class="book-details">
+              <div class="detail-item">
+                <h3>Year</h3>
+                <p id="book-year"></p>
+              </div>
+              <div class="detail-item">
+                <h3>Genre</h3>
+                <p id="book-genre"></p>
+              </div>
+              <div class="detail-item">
+                <h3>Price</h3>
+                <p id="book-price"></p>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="edit-btn">Edit Book</button>
+              <button class="delete-btn">Delete Book</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-content">
+          <div class="summary-section">
+            <h2>Description</h2>
+            <p id="book-summary"></p>
+            <div class="author-section">
+              <img id="author-photo" alt="Author Photo">
+              <div class="author-details">
+                <p class="author-name" id="author-name2"></p>
+                <p class="author-bio" id="author-bio2"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/book-detail.js" defer></script>
+</body>
+</html>
