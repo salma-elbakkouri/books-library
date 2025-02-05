@@ -1,26 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const books = document.querySelector(".books");
-    const prev = document.querySelector(".prev");
-    const next = document.querySelector(".next");
-
-    let index = 0;
-    const bookWidth = document.querySelector(".book-card").offsetWidth + 20; // Including margin
-    const visibleBooks = 5; 
-
-    next.addEventListener("click", () => {
-        if (index < books.children.length - visibleBooks) {
-            index++;
-            books.style.transform = `translateX(-${index * bookWidth}px)`;
-        }
-    });
-
-    prev.addEventListener("click", () => {
-        if (index > 0) {
-            index--;
-            books.style.transform = `translateX(-${index * bookWidth}px)`;
-        }
-    });
-
+document.addEventListener("DOMContentLoaded", function () {
     loadXML();
     document.getElementById('search-input').addEventListener('input', filterBooks);
 });
@@ -69,6 +47,31 @@ function displayBooks(xml) {
 
         book = books.iterateNext(); // Move to the next book
     }
+    initializeCarousel();
+}
+
+function initializeCarousel() {
+    const books = document.querySelector(".books");
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
+
+    let index = 0;
+    const bookWidth = document.querySelector(".book-card").offsetWidth + 20; // Including margin
+    const visibleBooks = 5; 
+
+    next.addEventListener("click", () => {
+        if (index < books.children.length - visibleBooks) {
+            index++;
+            books.style.transform = `translateX(-${index * bookWidth}px)`;
+        }
+    });
+
+    prev.addEventListener("click", () => {
+        if (index > 0) {
+            index--;
+            books.style.transform = `translateX(-${index * bookWidth}px)`;
+        }
+    });
 }
 
 function filterBooks() {
@@ -80,7 +83,11 @@ function filterBooks() {
     const filteredBooks = xmlDoc.evaluate(query, xmlDoc, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
 
     let book = filteredBooks.iterateNext();
+    let found = false;
+
     while (book) {
+        found = true;
+
         const title = xmlDoc.evaluate('title/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
         const author = xmlDoc.evaluate('author/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
         const cover = xmlDoc.evaluate('cover/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
@@ -102,5 +109,12 @@ function filterBooks() {
         booksContainer.appendChild(bookCard);
 
         book = filteredBooks.iterateNext(); // Move to the next book
+    }
+
+    if (!found) {
+        const noResults = document.createElement("p");
+        noResults.className = "no-results";
+        noResults.textContent = "Not available";
+        booksContainer.appendChild(noResults);
     }
 }
