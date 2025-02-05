@@ -1,8 +1,16 @@
-const express   = require('express');
-const path      = require('path');
-const fs        = require('fs');
-const multer    = require('multer');
-const xml2js    = require('xml2js');
+const express = require('express');
+const path = require('path');
+const fs = require('fs');
+const multer = require('multer');
+const xml2js = require('xml2js');
+
+const { DOMParser, XMLSerializer } = require('xmldom');
+const xpath = require('xpath');
+const { exec } = require('child_process');
+
+// NEW: Use libxslt and libxmljs for XSLT processing
+// const libxslt   = require('libxslt');
+// const libxmljs  = require('libxmljs');
 
 const app = express();
 const PORT = 3000;
@@ -42,12 +50,12 @@ app.post('/addBook', upload.fields([
   const { title, year, genre, price, summary, authorName, nationality, authorBio, id } = req.body;
 
   // Use the generated filename (stored in public/images) for the image paths
-  const coverFileName = req.files['cover'] 
-    ? '/images/' + req.files['cover'][0].filename 
+  const coverFileName = req.files['cover']
+    ? '/images/' + req.files['cover'][0].filename
     : "/images/defaultCover.jpg";
 
-  const authorPhotoFileName = req.files['authorPhoto'] 
-    ? '/images/' + req.files['authorPhoto'][0].filename 
+  const authorPhotoFileName = req.files['authorPhoto']
+    ? '/images/' + req.files['authorPhoto'][0].filename
     : "/images/defaultAuthor.jpg";
 
   const xmlFilePath = path.join(__dirname, 'data', 'books.xml');
@@ -103,6 +111,32 @@ app.post('/addBook', upload.fields([
         return res.json({ success: true });
       });
     });
+  });
+});
+
+/// GET endpoint to export a book as PDF
+app.get('/export-book', (req, res) => {
+  const bookId = req.query.id;
+  if (!bookId) return res.status(400).send("No book id provided.");
+
+  const xmlFilePath = path.join(__dirname, 'data', 'books.xml');
+  fs.readFile(xmlFilePath, 'utf8', (err, xmlData) => {
+    if (err) {
+      console.error('Error reading XML file:', err);
+      return res.status(500).send('Error reading XML file');
+    }
+
+    // Use DOMParser and xpath to locate the book node (works for both <library> and <books>)
+    const doc = new DOMParser().parseFromString(xmlData, 'text/xml');
+    let bookNode = xpath.select1(`//book[@id='${bookId}']`, doc);
+    if (!bookNode) {
+      return res.status(404).send('Book not found');
+    }
+
+    // Use XMLSerializer to convert the node to a string
+    const serializer = new XMLSerializer();
+    const bookNodeStr = serializer.serializeToString(bookNode);
+  
   });
 });
 
