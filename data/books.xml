@@ -5,8 +5,7 @@
     <year>2005</year>
     <genre>Fantasy</genre>
     <cover>images/harry.jpg</cover>
-    <summary>
-      Harry Potter and the Half-Blood Prince continues the saga as dark forces loom over Hogwarts. In his sixth year, Harry confronts dangers and mysteries surrounding Lord Voldemort’s past. Guided by Dumbledore, he uncovers secrets about Horcruxes—objects that harbor fragments of a dark soul. Amid shifting alliances and hidden threats, his friendships with Ron and Hermione are tested, and his understanding of loyalty and sacrifice deepens as he prepares for the inevitable battle between light and darkness.
+    <summary>Harry Potter and the Half-Blood Prince continues the saga as dark forces loom over Hogwarts. In his sixth year, Harry confronts dangers and mysteries surrounding Lord Voldemort’s past. Guided by Dumbledore, he uncovers secrets about Horcruxes—objects that harbor fragments of a dark soul. Amid shifting alliances and hidden threats, his friendships with Ron and Hermione are tested, and his understanding of loyalty and sacrifice deepens as he prepares for the inevitable battle between light and darkness.
     </summary>
     <price>15.99</price>
     <author>
@@ -16,31 +15,26 @@
       <photo>images/rowling.jpg</photo>
     </author>
   </book>
-  
   <book id="2">
     <title>1984</title>
     <year>1949</year>
     <genre>Dystopian</genre>
     <cover>images/1984.jpg</cover>
-    <summary>
-      1984 is a dystopian novel that portrays a totalitarian society ruled by an oppressive regime. In Oceania, every citizen is surveilled and controlled by the Party and its leader, Big Brother. Winston Smith, who works at the Ministry of Truth, begins to question the regime’s manipulation of history and truth. As love blossoms and rebellion stirs, Winston risks all to seek freedom, to face the consequences of defiance in a world where thought itself is a crime.
-    </summary>
+    <summary>1984 is a dystopian novel that portrays a totalitarian society ruled by an oppressive regime. In Oceania, every citizen is surveilled and controlled by the Party and its leader, Big Brother. Winston Smith, who works at the Ministry of Truth, begins to question the regime’s manipulation of history and truth. As love blossoms and rebellion stirs, Winston risks all to seek freedom, to face the consequences of defiance in a world where thought itself is a crime.</summary>
     <price>12.99</price>
     <author>
       <name>George Orwell</name>
       <nationality>British</nationality>
-      <bio>Eric Arthur Blair, plus connu sous son nom de plume George Orwell ([dʒɔː(ɹ)dʒ ˈɔːwel])a, né le 25 juin 1903 à Motihari (Inde) pendant la période du Raj britannique et mort le 21 janvier 1950 à Londres, est un écrivain, essayiste et journaliste britannique.</bio>
+      <bio>Eric Arthur Blair, better known by his pen name George Orwell, was born on June 25, 1903, in Motihari (India) during the British Raj and died on January 21, 1950, in London. He was a British writer, essayist, and journalist.</bio>
       <photo>images/orwell.jpg</photo>
     </author>
   </book>
-
   <book id="3">
     <title>To Kill a Mockingbird</title>
     <year>1960</year>
     <genre>Classic</genre>
     <cover>images/mockingbird.jpg</cover>
-    <summary>
-      To Kill a Mockingbird by Harper Lee is a classic novel set in the racially segregated American South during the 1930s. The story is told through the eyes of Scout Finch, a young girl growing up in the town of Maycomb, Alabama, with her older brother, Jem, and their widowed father, Atticus, a principled lawyer. As Scout and Jem navigate childhood, they become fascinated by their mysterious neighbor, Boo Radley, a reclusive man rumored to be dangerous.
+    <summary>To Kill a Mockingbird by Harper Lee is a classic novel set in the racially segregated American South during the 1930s. The story is told through the eyes of Scout Finch, a young girl growing up in the town of Maycomb, Alabama, with her older brother, Jem, and their widowed father, Atticus, a principled lawyer. As Scout and Jem navigate childhood, they become fascinated by their mysterious neighbor, Boo Radley, a reclusive man rumored to be dangerous.
     </summary>
     <price>10.99</price>
     <author>
@@ -50,14 +44,12 @@
       <photo>images/harper.jpg</photo>
     </author>
   </book>
-
   <book id="4">
     <title>A Game of Thrones</title>
     <year>1996</year>
     <genre>Political novel, epic fantasy</genre>
     <cover>images/game-of-thrones.jpg</cover>
-    <summary>
-      A Game of Thrones by George R.R. Martin is a fantasy novel that tells a tale of power struggles and betrayal in a realm torn by war. In a kingdom of shifting loyalties, noble families clash in pursuit of the Iron Throne. Characters face treacherous enemies, unexpected alliances, and dark magic lurking in shadows. With vivid worldbuilding and intricate plots, the story challenges notions of honor, duty, and survival in a medieval landscape.
+    <summary>A Game of Thrones by George R.R. Martin is a fantasy novel that tells a tale of power struggles and betrayal in a realm torn by war. In a kingdom of shifting loyalties, noble families clash in pursuit of the Iron Throne. Characters face treacherous enemies, unexpected alliances, and dark magic lurking in shadows. With vivid worldbuilding and intricate plots, the story challenges notions of honor, duty, and survival in a medieval landscape.
     </summary>
     <price>25.9</price>
     <author>
@@ -67,14 +59,12 @@
       <photo>images/george.jpg</photo>
     </author>
   </book>
-
   <book id="5">
     <title>A Feast for Crows</title>
     <year>2005</year>
     <genre>Fantasy</genre>
     <cover>images/Feast-for-Crows.jpg</cover>
-    <summary>
-      A Feast for Crows by George R.R. Martin is a fantasy novel focused on political intrigues after a great war. In a realm where survivors of conflict struggle for control amid shifting loyalties and hidden agendas, the narrative follows characters facing loss and ambition as rivalries resurface. With detailed portrayals of power, the story weaves plots of revenge, honor, and survival in a land where trust is rare and betrayal common, fusing destiny with harsh, cold reality.
+    <summary>A Feast for Crows by George R.R. Martin is a fantasy novel focused on political intrigues after a great war. In a realm where survivors of conflict struggle for control amid shifting loyalties and hidden agendas, the narrative follows characters facing loss and ambition as rivalries resurface. With detailed portrayals of power, the story weaves plots of revenge, honor, and survival in a land where trust is rare and betrayal common, fusing destiny with harsh, cold reality.
     </summary>
     <price>20.10</price>
     <author>
@@ -84,14 +74,12 @@
       <photo>images/george.jpg</photo>
     </author>
   </book>
-
   <book id="6">
     <title>A Clash of Kings</title>
     <year>1998</year>
     <genre>Epic fantasy, Political novel</genre>
     <cover>images/clash-of-kings.jpg</cover>
-    <summary>
-      A Clash of Kings by George R.R. Martin is a fantasy novel chronicling the battle for a fractured throne. As rival factions emerge, power struggles intensify and loyalties waver in a turbulent realm. Characters face brutal challenges and shifting alliances while ancient threats resurface. With rich detail and unexpected twists, the narrative explores the costs of ambition and sacrifice in war, weaving a tapestry of honor, betrayal, and survival in a medieval world in chaos across kingdoms.
+    <summary>A Clash of Kings by George R.R. Martin is a fantasy novel chronicling the battle for a fractured throne. As rival factions emerge, power struggles intensify and loyalties waver in a turbulent realm. Characters face brutal challenges and shifting alliances while ancient threats resurface. With rich detail and unexpected twists, the narrative explores the costs of ambition and sacrifice in war, weaving a tapestry of honor, betrayal, and survival in a medieval world in chaos across kingdoms.
     </summary>
     <price>26.9</price>
     <author>
@@ -101,14 +89,12 @@
       <photo>images/george.jpg</photo>
     </author>
   </book>
-
   <book id="7">
     <title>The Great Gatsby</title>
     <year>1925</year>
     <genre>Fiction</genre>
     <cover>images/gatsby.jpg</cover>
-    <summary>
-      The Great Gatsby by F. Scott Fitzgerald is a novel set in the Roaring Twenties, a time of wealth, excess, and social change in America. The story is narrated by Nick Carraway, a young man who moves to West Egg, Long Island, and becomes fascinated by his mysterious and wealthy neighbor, Jay Gatsby. Gatsby is known for throwing extravagant parties, but his true motive is to win back Daisy Buchanan, Nick’s cousin and Gatsby’s lost love.
+    <summary>The Great Gatsby by F. Scott Fitzgerald is a novel set in the Roaring Twenties, a time of wealth, excess, and social change in America. The story is narrated by Nick Carraway, a young man who moves to West Egg, Long Island, and becomes fascinated by his mysterious and wealthy neighbor, Jay Gatsby. Gatsby is known for throwing extravagant parties, but his true motive is to win back Daisy Buchanan, Nick’s cousin and Gatsby’s lost love.
     </summary>
     <price>15.99</price>
     <author>
@@ -118,14 +104,12 @@
       <photo>images/fitzgerald.jpg</photo>
     </author>
   </book>
-
   <book id="8">
     <title>A Storm of Swords</title>
     <year>2000</year>
     <genre>Fantasy</genre>
     <cover>images/AStormOfSwords.jpg</cover>
-    <summary>
-      A Storm of Swords by George R.R. Martin is a fantasy novel that depicts a realm torn by betrayal and shifting power. Amid brutal conflicts, characters navigate perilous alliances and unexpected twists. As secrets unravel and loyalties are tested, the narrative reveals the true cost of ambition. With vivid imagery and relentless tension, the story weaves themes of honor, revenge, and survival in a medieval world where every decision carries life-altering consequences across a vast fractured empire.
+    <summary>A Storm of Swords by George R.R. Martin is a fantasy novel that depicts a realm torn by betrayal and shifting power. Amid brutal conflicts, characters navigate perilous alliances and unexpected twists. As secrets unravel and loyalties are tested, the narrative reveals the true cost of ambition. With vivid imagery and relentless tension, the story weaves themes of honor, revenge, and survival in a medieval world where every decision carries life-altering consequences across a vast fractured empire.
     </summary>
     <price>20.10</price>
     <author>
@@ -135,14 +119,12 @@
       <photo>images/george.jpg</photo>
     </author>
   </book>
-
   <book id="9">
     <title>He Who Drowned the World</title>
     <year>2023</year>
     <genre>Alternative history</genre>
     <cover>images/He-Who-Drowned-World.jpg</cover>
-    <summary>
-      He Who Drowned the World is a historical fantasy novel by Shelley Parker-Chan that reimagines the founding of the Ming Dynasty. In 14th-century China, Zhu Yuanzhang, assuming his deceased brother’s identity, rises to power as the Radiant King. Amid fierce competition and shifting alliances, he confronts ambitious rivals and plots. As destiny, magic, and ambition collide, the characters face personal sacrifices and the burdens of leadership in a world where power is hard-won and betrayal is ever-present.
+    <summary>He Who Drowned the World is a historical fantasy novel by Shelley Parker-Chan that reimagines the founding of the Ming Dynasty. In 14th-century China, Zhu Yuanzhang, assuming his deceased brother’s identity, rises to power as the Radiant King. Amid fierce competition and shifting alliances, he confronts ambitious rivals and plots. As destiny, magic, and ambition collide, the characters face personal sacrifices and the burdens of leadership in a world where power is hard-won and betrayal is ever-present.
     </summary>
     <price>20.10</price>
     <author>
@@ -152,14 +134,12 @@
       <photo>images/Shelley Parker-Chan.jpeg</photo>
     </author>
   </book>
-
   <book id="10">
     <title>wissal</title>
     <year>8796</year>
     <genre>hjjhjh</genre>
     <cover>/images/cover-1738785976849.jpeg</cover>
-    <summary>
-      wissal is a mysterious work that defies conventional categorization. Blending elements of abstract narrative and surreal imagery, the story invites readers into an enigmatic world. Its plot, sparse yet evocative, challenges traditional storytelling by interweaving cryptic symbols with fleeting moments of clarity. Through a series of unexpected twists and ambiguous character encounters, the narrative compels readers to explore hidden meanings and question reality, ultimately offering a unique, thought-provoking literary experience, inviting readers toward truly profound human existence.
+    <summary>wissal is a mysterious work that defies conventional categorization. Blending elements of abstract narrative and surreal imagery, the story invites readers into an enigmatic world. Its plot, sparse yet evocative, challenges traditional storytelling by interweaving cryptic symbols with fleeting moments of clarity. Through a series of unexpected twists and ambiguous character encounters, the narrative compels readers to explore hidden meanings and question reality, ultimately offering a unique, thought-provoking literary experience, inviting readers toward truly profound human existence.
     </summary>
     <price>5786</price>
     <author>
