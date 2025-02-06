@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     loadXML();
     document.getElementById('search-input').addEventListener('input', filterBooks);
     
-    // Navigate to add-book page on clicking "Add Book"
     const addBookBtn = document.getElementById("addButton");
     if (addBookBtn) {
       addBookBtn.addEventListener("click", () => {
@@ -21,7 +20,6 @@ function loadXML() {
             displayBooks(xmlDoc); 
         }
     };
-    // Updated path to load XML from the data folder served by Express
     xhttp.open("GET", "/data/books.xml", true);
     xhttp.send();
 }
@@ -30,13 +28,11 @@ function displayBooks(xml) {
     const booksContainer = document.getElementById("book-list");
     booksContainer.innerHTML = ''; 
 
-    // Use XPath to iterate over each <book>
     const books = xml.evaluate('//book', xml, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
 
     let book = books.iterateNext();
     while (book) {
         const title = xml.evaluate('title/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
-        // Get the author name from the nested <author><name> element
         const author = xml.evaluate('author/name/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
         const cover = xml.evaluate('cover/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
         const id = book.getAttribute('id');

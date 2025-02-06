@@ -1,0 +1,17 @@
+<!ELEMENT library (book*)>
+
+<!ELEMENT book (title, year, genre, cover, summary, price, author)>
+<!ATTLIST book id CDATA #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT cover (#PCDATA)>
+<!ELEMENT summary (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+<!ELEMENT author (name, nationality, bio, photo)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT nationality (#PCDATA)>
+<!ELEMENT bio (#PCDATA)>
+<!ELEMENT photo (#PCDATA)>
