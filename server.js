@@ -105,8 +105,7 @@ app.post('/addBook', upload.fields([
 });
 
 
-// New endpoint for exporting book to PDF using only Node packages
-app.get('/export-book', async (req, res) => {
+app.get('/export-book', (req, res) => {
   const bookId = req.query.id;
   console.log(`Received export request for book id: ${bookId}`);
 
@@ -114,88 +113,29 @@ app.get('/export-book', async (req, res) => {
   fs.readFile(xmlFilePath, 'utf-8', (readErr, data) => {
     if (readErr) {
       console.error('Error reading XML:', readErr);
-      return res.status(500).send("Server error reading XML file.");
+      return res.status(500).json({ success: false, error: 'Could not read XML file' });
     }
-    console.log('Successfully read books.xml');
 
-    xml2js.parseString(data, async (parseErr, result) => {
+    xml2js.parseString(data, { explicitArray: false }, (parseErr, result) => {
       if (parseErr) {
         console.error('Error parsing XML:', parseErr);
-        return res.status(500).send("Server error parsing XML file.");
+        return res.status(500).json({ success: false, error: 'Error parsing XML' });
       }
-      console.log('Successfully parsed XML');
 
-      // Adjust in case your XML root is <library> instead of <books>
-      const books = result.library ? result.library.book : (result.books ? result.books.book : []);
+      const books = result.library?.book || [];
       const book = books.find(b => b.$.id === bookId);
+
       if (!book) {
-        console.error('No book found with id=', bookId);
-        return res.status(404).send("Book not found.");
-      }
-      console.log('Book found:', book);
-
-      // Wrap the book in a root element (<export>) for transformation
-      const exportObj = { export: { book } };
-      const builder = new xml2js.Builder({ headless: true });
-      const exportXmlStr = builder.buildObject(exportObj);
-      console.log('Export XML:', exportXmlStr);
-
-      // Read the XSL file (assumed to be in the data folder as transform.xsl)
-      const xsltPath = path.join(__dirname, 'data', 'transform.xsl');
-      let xsltStr;
-      try {
-        xsltStr = fs.readFileSync(xsltPath, 'utf-8');
-        console.log('Loaded transform.xsl');
-      } catch (err) {
-        console.error('Error reading XSL file:', err);
-        return res.status(500).send("Error reading XSL file.");
+        return res.status(404).json({ success: false, error: 'Book not found' });
       }
 
-      // Parse XML and XSL strings into objects for xslt-processor
-      let xmlObj, xslObj;
-      try {
-        xmlObj = xsltProcessor.xmlParse(exportXmlStr);
-        xslObj = xsltProcessor.xmlParse(xsltStr);
-      } catch (err) {
-        console.error('Error parsing XML/XSL strings:', err);
-        return res.status(500).send("Error parsing XML or XSL.");
-      }
-
-      // Transform XML to HTML
-      let htmlStr;
-      try {
-        htmlStr = xsltProcessor.xsltProcess(xmlObj, xslObj);
-        console.log('XSLT transformation completed.');
-      } catch (err) {
-        console.error('Error during XSLT transformation:', err);
-        return res.status(500).send("Error during XSLT transformation.");
-      }
-
-
-      // Use Puppeteer to convert HTML to PDF
-      (async () => {
-        let browser;
-        try {
-          browser = await puppeteer.launch({ headless: true });
-          const page = await browser.newPage();
-          await page.setContent(htmlStr, { waitUntil: 'networkidle0' });
-          const pdfBuffer = await page.pdf({ format: 'A4' });
-          await browser.close();
-          console.log('PDF conversion completed.');
-
-          // Set headers for download
-          res.setHeader('Content-Disposition', `attachment; filename=book-${bookId}.pdf`);
-          res.setHeader('Content-Type', 'application/pdf');
-          res.send(pdfBuffer);
-        } catch (err) {
-          console.error('Error during PDF conversion:', err);
-          if (browser) await browser.close();
-          return res.status(500).send("Error converting HTML to PDF.");
-        }
-      })();
+      // Remove XML attributes (`$`) and send clean JSON
+      delete book.$;
+      return res.json({ success: true, book });
     });
   });
 });
+
 
 // Add this to server.js (preferably near your other endpoints)
 app.delete('/deleteBook', (req, res) => {

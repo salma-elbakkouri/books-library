@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Add event listener for Export Book button
   document.getElementById('export-btn').addEventListener('click', function() {
-    // Redirect to the export endpoint so that the server returns the PDF
-    window.location.href = `/export-book?id=${bookId}`;
+    // Open a new page that will transform the XML and display the output
+    window.open(`/export.html?id=${bookId}`, '_blank');
   });
 });
 
@@ -19,7 +19,7 @@ function loadXMLAndDisplayBook(bookId) {
     if (this.readyState === 4 && this.status === 200) {
       const xmlDoc = this.responseXML;
 
-      // XPath to find the book with the matching id (searches in both library and books)
+      // XPath to find the book with the matching id
       const query = `//book[@id='${bookId}']`;
       const result = xmlDoc.evaluate(
         query,
@@ -48,7 +48,6 @@ function loadXMLAndDisplayBook(bookId) {
         document.getElementById('book-cover').src         = cover;
         document.getElementById('book-title').textContent   = title;
         document.getElementById('book-author').textContent  = authorName;
-     //   document.getElementById('author-bio').textContent   = authorBio;
         document.getElementById('book-summary').textContent = summary;
 
         // Update author section in the summary
