@@ -48,7 +48,7 @@ function loadXMLAndDisplayBook(bookId) {
         document.getElementById('book-cover').src         = cover;
         document.getElementById('book-title').textContent   = title;
         document.getElementById('book-author').textContent  = authorName;
-        document.getElementById('author-bio').textContent   = authorBio;
+     //   document.getElementById('author-bio').textContent   = authorBio;
         document.getElementById('book-summary').textContent = summary;
 
         // Update author section in the summary

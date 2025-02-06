@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Details</title>
-  <link rel="icon" href="./images/icon.png" type="image/x-icon">
+  <link rel="icon" href="./images/icon.png" type="image/x-icon" />
   <link rel="stylesheet" href="./css/book-detail.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-
 <body>
   <div class="scale-wrapper">
     <div class="container">
       <div class="top-section">
+        <a href="index.html" class="back-button">
+          <i class="fas fa-arrow-left"></i>
+        </a>
         <div class="book-cover-container">
-          <img id="book-cover" src="" alt="Book Cover">
+          <img id="book-cover" src="" alt="Book Cover" />
         </div>
         <div class="book-info">
           <h1 id="book-title"></h1>
           <p class="author-name" id="book-author"></p>
-          <p class="author-bio" id="author-bio"></p>
+          <p class="author-bio">
+            Get ready to dive in the world of book with books library and get ready to dive in the world of book with
+            books library!!
+          </p>
+          <!-- BUTTONS remain here so they stay in their original place -->
+          <div class="buttons">
+            <div>
+              <button class="edit-btn" id="edit-btn">Edit Book</button>
+            </div>
+            <div>
+              <button class="icon-btn export-btn">
+                <i class="fas fa-download"></i>
+              </button>
+              <button class="icon-btn delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- OVERLAY PANEL wraps only the main content -->
+      <div class="overlay-panel">
+        <div class="main-content">
+          <div class="left">
+            <div class="summary-section">
+              <h2>Description</h2>
+              <p id="book-summary"></p>
+            </div>
+            <div class="author-section">
+              <img id="author-photo" alt="Author Photo" />
+              <div class="author-details">
+                <p class="author-name" id="author-name2"></p>
+                <p class="author-bio" id="author-bio2"></p>
+              </div>
+            </div>
+          </div>
+    
           <div class="book-details">
             <div class="detail-item">
               <h3>Year</h3>
@@ -34,34 +74,14 @@
               <p id="book-price"></p>
             </div>
           </div>
-          <div class="buttons">
-            <button class="export-btn" id="export-btn">Export Book</button>
-            <button class="edit-btn">Edit Book</button> 
-            <button class="delete-btn">Delete Book</button> 
-          </div>
         </div>
       </div>
-
-      <div class="main-content">
-        <div class="summary-section">
-          <h2>Description</h2>
-          <p id="book-summary"></p>
-          <div class="author-section">
-            <img id="author-photo" alt="Author Photo">
-            <div class="author-details">
-              <p class="author-name" id="author-name2"></p>
-              <p class="author-bio" id="author-bio2"></p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- END OF OVERLAY PANEL -->
+      
     </div>
   </div>
   <script src="./js/book-detail.js" defer></script>
-
   <script src="./js/delete.js" defer></script>
   <script src="./js/edit-book.js" defer></script>
-
 </body>
-
 </html>

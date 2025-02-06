@@ -36,10 +36,7 @@
     <year>1960</year>
     <genre>Classic</genre>
     <cover>images/mockingbird.jpg</cover>
-    <summary>To Kill a Mockingbird by Harper Lee is a classic novel set in the racially segregated American South during the 1930s. The story is told through the eyes of Scout Finch, a young girl growing up in the town of Maycomb, Alabama, with her older brother, Jem, and their widowed father, Atticus, a principled lawyer. As Scout and Jem navigate childhood, they become fascinated by their mysterious neighbor, Boo Radley, a reclusive man rumored to be dangerous.&#xD;&#xD;&#xD;
-        The central plot follows Atticus as he defends Tom Robinson, a Black man falsely accused of raping a white woman, Mayella Ewell. Despite clear evidence of Tom’s innocence, racial prejudice dominates the trial, and he is unjustly convicted. Later, Tom is shot and killed while trying to escape prison, highlighting the deep injustice in their society.&#xD;&#xD;&#xD;
-        As the children witness their father’s moral courage, they also experience the town’s cruelty and hypocrisy. However, they also see acts of kindness, particularly when Boo Radley ultimately saves them from an attack by Bob Ewell, Mayella’s vengeful father. Through this experience, Scout learns an important lesson about empathy and human nature, understanding that Boo is not a monster but a deeply misunderstood person.&#xD;&#xD;&#xD;
-        The novel explores themes of racism, justice, morality, and the loss of innocence, making it a powerful critique of social inequality and a timeless story about compassion and standing up for what is right.</summary>
+    <summary>To Kill a Mockingbird by Harper Lee is a classic novel set in the racially segregated American South during the 1930s. The story is told through the eyes of Scout Finch, a young girl growing up in the town of Maycomb, Alabama, with her older brother, Jem, and their widowed father, Atticus, a principled lawyer. As Scout and Jem navigate childhood, they become fascinated by their mysterious neighbor, Boo Radley, a reclusive man rumored to be dangerous.</summary>
     <price>10.99</price>
     <author>
       <name>Harper Lee</name>
