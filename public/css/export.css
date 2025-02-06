@@ -8,7 +8,6 @@ body {
     text-align: center;
 }
 
-/* Top section with back button and centered heading */
 .top-section {
     display: flex;
     justify-content: center;
@@ -17,7 +16,6 @@ body {
     margin: 20px 0px;
 }
 
-/* Back button remains left aligned */
 .back-button {
     position: absolute;
     left: 20px;
@@ -43,14 +41,12 @@ body {
     color: white;
 }
 
-/* Centered headings */
 h1,
 h2 {
     color: #cb572b;
     margin: 0 auto;
 }
 
-/* JSON container */
 #transformed-content {
     background-color: #eae9dc;
     color: #4db0b7;
@@ -64,14 +60,12 @@ h2 {
     margin: 15px;
 }
 
-/* JSON keys */
 .json-key {
     color: #cb572b;
     font-weight: bold;
     font-size: 18px;
 }
 
-/* JSON values */
 .json-value {
     color: #4db0b7;
     font-weight: normal;
@@ -79,19 +73,16 @@ h2 {
     line-height: 1.7;
 }
 
-/* JSON braces styled to be bold and larger */
 .json-braces {
     font-weight: bold;
     font-size: 20px;
     color: #000;
 }
 
-/* Buttons container */
 .button-container {
     margin-top: 10px;
 }
 
-/* Buttons with small shadow */
 .button {
     background-color: #cb572b;
     border :none;
@@ -111,7 +102,6 @@ h2 {
     background-color: #642b14;
 }
 
-/* Button icons */
 .button-icon {
     width: 14px;
     height: 14px;

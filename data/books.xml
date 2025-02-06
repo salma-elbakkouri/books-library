@@ -124,29 +124,14 @@
     <year>2023</year>
     <genre>Alternative history</genre>
     <cover>images/He-Who-Drowned-World.jpg</cover>
-    <summary>He Who Drowned the World is a historical fantasy novel by Shelley Parker-Chan that reimagines the founding of the Ming Dynasty. In 14th-century China, Zhu Yuanzhang, assuming his deceased brother’s identity, rises to power as the Radiant King. Amid fierce competition and shifting alliances, he confronts ambitious rivals and plots. As destiny, magic, and ambition collide, the characters face personal sacrifices and the burdens of leadership in a world where power is hard-won and betrayal is ever-present.
+    <summary>He Who Drowned the World is a historical fantasy novel by Shelley Parker-Chan that reimagines the founding of the Ming Dynasty. In 14th-century China, Zhu Yuanzhang, assuming his deceased brother’s identity, rises to power as the Radiant King. Amid fierce competition and shifting alliances, he confronts ambitious rivals and plots. As destiny, magic, and ambition collide, the characters face personal sacrifices and the burdens of leadership in a world where power is hard-won and betrayal is ever-present.&#xD;
     </summary>
-    <price>20.10</price>
+    <price>2079</price>
     <author>
       <name>Kerri Maniscalco</name>
       <nationality>Australian</nationality>
       <bio>Shelley Parker-Chan is a non-binary, Australian fantasy novelist best known for their debut novel, She Who Became the Sun and its sequel, He Who Drowned the World, which form The Radiant Emperor Duology.[1]</bio>
       <photo>images/Shelley Parker-Chan.jpeg</photo>
-    </author>
-  </book>
-  <book id="10">
-    <title>wissal</title>
-    <year>8796</year>
-    <genre>hjjhjh</genre>
-    <cover>/images/cover-1738785976849.jpeg</cover>
-    <summary>wissal is a mysterious work that defies conventional categorization. Blending elements of abstract narrative and surreal imagery, the story invites readers into an enigmatic world. Its plot, sparse yet evocative, challenges traditional storytelling by interweaving cryptic symbols with fleeting moments of clarity. Through a series of unexpected twists and ambiguous character encounters, the narrative compels readers to explore hidden meanings and question reality, ultimately offering a unique, thought-provoking literary experience, inviting readers toward truly profound human existence.
-    </summary>
-    <price>5786</price>
-    <author>
-      <name>jhhjhvhj</name>
-      <nationality>jhvjhv</nationality>
-      <bio>kjbbkb</bio>
-      <photo>/images/authorPhoto-1738785976852.jpg</photo>
     </author>
   </book>
 </library>

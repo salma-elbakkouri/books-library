@@ -95,7 +95,6 @@ body {
     margin-right: 20px;
     display: flex;
     justify-content: space-between;
-    /* Ensure buttons stay above the overlay panel (if they overlap) */
     position: relative;
     z-index: 2;
 }

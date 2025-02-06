@@ -101,7 +101,6 @@ function filterBooks() {
         found = true;
 
         const title = xmlDoc.evaluate('title/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
-        const author = xmlDoc.evaluate('author/name/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
         const cover = xmlDoc.evaluate('cover/text()', book, null, XPathResult.STRING_TYPE, null).stringValue;
 
         const bookCard = document.createElement("div");

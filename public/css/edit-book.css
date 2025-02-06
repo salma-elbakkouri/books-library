@@ -6,7 +6,6 @@ body {
     font-family: 'Reddit Mono', monospace;
 }
 
-/* Smaller, more compact container to prevent scrolling */
 .container {
     max-width: 800px;
     margin: 30px auto;
@@ -17,7 +16,6 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Header container with illustration image beside title */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -36,7 +34,6 @@ body {
     width: auto;
 }
 
-/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -57,7 +54,6 @@ legend {
     color: #2c2e41;
 }
 
-/* Grid layout for form sections */
 .form-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -143,17 +139,13 @@ legend {
 
 .book-info-fieldset {
     border: 2px solid #ababaa;
-    /* A darker, more visible border */
     border-radius: 6px;
     padding: 15px 20px;
     margin-bottom: 10px;
-    /* Add spacing below to separate from the next section */
 }
 
-/* New styles for the Author Details section */
 .author-fieldset {
     border: 2px solid #ababaa;
-    /* Same darker border for consistency */
     border-radius: 6px;
     padding: 15px 20px;
 }

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
 
-    <!-- Output as HTML -->  
     <xsl:output method="html" encoding="UTF-8" indent="no"/>  
 
-    <!-- Template matching the custom <export> root element -->  
-    <xsl:template match="/export">  
+    <xsl:template match="/library">  
         <div id="transformed-content">  
             <span class="json-braces">{</span>  
             <span class="json-key">"title"</span>: <span class="json-value">"<xsl:value-of select="book/title"/>"</span>,  
