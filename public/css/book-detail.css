@@ -8,7 +8,7 @@ body {
 
 .container {
     padding: 20px 40px;
-    background: linear-gradient(to bottom, #F1EEE3 40%, #fffcf7 60%);
+    background: #F1EEE3;
     margin: 50px 180px;
     border-radius: 10px;
     border: 5px solid #D7D3CE;
@@ -20,102 +20,142 @@ body {
 
 .top-section {
     display: flex;
-    gap: 30px;
+    gap: 60px;
     margin-bottom: 2rem;
-    justify-content: center;
-    align-items: center;
 }
 
 .book-cover-container img {
-    width: 200px;
-    height: auto;
+    width: 300px;
+    height: 440px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.313);
     border-radius: 8px;
+    margin-left: 160px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+.overlay-panel {
+    background-color: #F9F7F2;
+    padding: 40px;
+    margin-top: -180px; 
+    width: 93%;
+    position: relative;
+    z-index: 1;
 }
 
 .book-info {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
 }
 
 .book-info h1 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 1.4;
     margin: 0;
+    margin-bottom: 40px;
 }
 
 .author-name {
     font-size: 1.2rem;
     font-weight: 700;
-    margin-top: 1rem ;
-    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-bottom: 5px;
 }
 
 .author-bio {
     font-weight: 400;
     color: #444;
+    line-height: 1.7;
     margin: 0.4rem 0;
 }
+
 .book-details {
     flex: 1;
     margin-top: 10px;
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .book-details .detail-item h3 {
     font-size: 1rem;
     font-weight: bold;
-    margin: 0;
+    margin: 20px 0px;
 }
 
 .book-details .detail-item p {
     margin: 0.25rem 0 0;
     color: #555;
 }
-.buttons
-{
-    margin-top: 20px;
+
+.buttons {
+    margin-top: 80px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* Ensure buttons stay above the overlay panel (if they overlap) */
+    position: relative;
+    z-index: 2;
 }
 
-.export-btn {
-    background-color: #454e97;
-    border: none;
+.buttons div:nth-child(2) {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn {
+    background-color: #282932;
     color: white;
     font-weight: 500;
     font-size: 16px;
-    border-radius: 4px;
-    padding: 12px 40px;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 45px;
     cursor: pointer;
+    margin-bottom: 20px;
+    align-self: flex-end;
 }
 
-.export-btn:hover {
+.edit-btn:hover {
     background-color: #2c2e41;
 }
-.delete-btn {
-    background-color: #c11a1ae8;
-    border: none;
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-    border-radius: 4px;
-    padding: 12px 40px;
+
+.icon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 47px;
+    border-radius: 50%;
+    border: 1px solid rgb(83, 83, 83);
+    background-color: transparent;
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    transition: 0.3s;
     cursor: pointer;
 }
 
-.delete-btn:hover {
-    background-color: #801212e8;
+.icon-btn:hover {
+    background-color: black;
+    color: white;
 }
 
+.icon-btn i {
+    font-size: 16px;
+}
 
 .main-content {
     display: flex;
-    gap: 2rem;
+    gap: 100px;
+    padding: 10px 80px;
+    margin-top: 120px;
 }
 
 .summary-section {
     flex: 2;
+    line-height: 1.7;
 }
 
 .summary-section h2 {
@@ -140,7 +180,6 @@ body {
 .author-section img {
     height: 100px;
     border-radius: 5px;
-    /* Round image */
     object-fit: cover;
 }
 
@@ -159,6 +198,32 @@ body {
 .scale-wrapper {
     transform: scale(0.9);
     transform-origin: top center;
-    width: 102%; 
-  }
-  
+    width: 102%;
+}
+
+.back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 1px solid rgb(83, 83, 83);
+    background-color: transparent;
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-button i {
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.left {
+    width: 70%;
+}
